@@ -26,7 +26,7 @@
 
 ```bash
 # 克隆项目
-git clone https://github.com/你的用户名/DailyPaper.git
+git clone https://github.com/4everWZ/DailyPaper.git
 cd DailyPaper
 
 # 安装依赖
