@@ -1,0 +1,55 @@
+name: Update Papers Daily
+
+on:
+  # 每天 UTC 0:00 自动运行
+  schedule:
+    - cron: '0 0 * * *'
+  
+  # 支持手动触发
+  workflow_dispatch:
+  
+  # Push 到 main 分支时触发
+  push:
+    branches:
+      - main
+
+jobs:
+  update-papers:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3
+    
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.10'
+    
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
+    
+    - name: Fetch papers
+      run: |
+        python scripts/fetch_papers.py
+    
+    - name: Generate HTML
+      run: |
+        python scripts/generate_html.py
+    
+    - name: Commit and push if changed
+      run: |
+        git config --global user.name 'GitHub Actions'
+        git config --global user.email 'actions@github.com'
+        git add -A
+        git diff --quiet && git diff --staged --quiet || (git commit -m "Auto update papers - $(date +'%Y-%m-%d')" && git push)
+    
+    - name: Deploy to GitHub Pages
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./docs
+        publish_branch: gh-pages
+        force_orphan: true

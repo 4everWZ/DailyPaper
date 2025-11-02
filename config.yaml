@@ -1,0 +1,108 @@
+# 数据源配置
+sources:
+  arxiv:
+    enabled: true
+    categories:
+      - cs.AI    # Artificial Intelligence
+      - cs.CV    # Computer Vision
+      - cs.CL    # Computation and Language (NLP)
+      - cs.LG    # Machine Learning
+      - cs.IR    # Information Retrieval
+      - cs.RO    # Robotics
+    max_results: 100
+    days_back: 7  # 抓取最近几天的论文
+
+# 领域分类关键词
+categories:
+  Computer Vision:
+    keywords: 
+      - computer vision
+      - image processing
+      - object detection
+      - image segmentation
+      - face recognition
+      - video analysis
+      - 3d reconstruction
+      - pose estimation
+      - visual recognition
+      - image generation
+      
+  Natural Language Processing:
+    keywords:
+      - natural language processing
+      - language model
+      - transformer
+      - bert
+      - gpt
+      - machine translation
+      - text generation
+      - question answering
+      - sentiment analysis
+      - named entity recognition
+      
+  Machine Learning:
+    keywords:
+      - machine learning
+      - deep learning
+      - neural network
+      - reinforcement learning
+      - transfer learning
+      - few-shot learning
+      - meta-learning
+      - optimization
+      - generative model
+      - contrastive learning
+      
+  Robotics:
+    keywords:
+      - robotics
+      - autonomous
+      - robot learning
+      - manipulation
+      - navigation
+      - control
+      
+  Multimodal:
+    keywords:
+      - multimodal
+      - vision-language
+      - clip
+      - image-text
+      - video-text
+
+# 顶级会议和期刊列表
+venues:
+  conferences:
+    - NeurIPS
+    - ICML
+    - ICLR
+    - CVPR
+    - ICCV
+    - ECCV
+    - ACL
+    - EMNLP
+    - NAACL
+    - AAAI
+    - IJCAI
+    - KDD
+    - ICRA
+    - IROS
+    
+  journals:
+    - Nature
+    - Science
+    - PAMI
+    - JMLR
+    - TPAMI
+    - IJCV
+
+# GitHub Pages 配置
+output:
+  data_dir: data
+  docs_dir: docs
+  papers_per_page: 50
+  
+# 调度配置（GitHub Actions）
+schedule:
+  cron: "0 0 * * *"  # 每天 UTC 0:00
+  timezone: UTC

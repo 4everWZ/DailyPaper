@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DailyPaper - AI/ML/CV/NLP 最新论文</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>📚 DailyPaper</h1>
+            <p class="subtitle">每日自动更新 AI/ML/CV/NLP 领域最新论文</p>
+            <p class="update-time">最后更新: 2025-11-02 16:11:32 UTC</p>
+        </div>
+    </header>
+    
+    <nav class="container">
+        <div class="filters">
+            <button class="filter-btn active" data-filter="all">全部 (10)</button>
+            <button class="filter-btn" data-filter="Computer Vision">Computer Vision</button>
+            <button class="filter-btn" data-filter="Natural Language Processing">NLP</button>
+            <button class="filter-btn" data-filter="Machine Learning">Machine Learning</button>
+            <button class="filter-btn" data-filter="Robotics">Robotics</button>
+            <button class="filter-btn" data-filter="Multimodal">Multimodal</button>
+        </div>
+        <div class="search-box">
+            <input type="text" id="searchInput" placeholder="搜索论文标题、作者、摘要...">
+        </div>
+    </nav>
+    
+    <main class="container">
+        <div id="papers-container">
+            
+            <article class="paper-card" data-tags="Robotics">
+                <h2 class="paper-title">
+                    <a href="http://arxiv.org/abs/2510.26802v1" target="_blank">Are Video Models Ready as Zero-Shot Reasoners? An Empirical Study with the MME-CoF Benchmark</a>
+                </h2>
+                <div class="paper-meta">
+                    <span class="meta-item">📅 2025-10-30</span>
+                    <span class="meta-item">📖 ArXiv - cs.CV</span>
+                </div>
+                <div class="paper-authors">
+                    👥 Ziyu Guo, Xinyan Chen, Renrui Zhang, Ruichuan An, Yu Qi et al.
+                </div>
+                <div class="paper-tags">
+                    <span class="tag">Robotics</span>
+                </div>
+                <div class="paper-abstract">
+                    <details>
+                        <summary>查看摘要</summary>
+                        <p>Recent video generation models can produce high-fidelity, temporally coherent
+videos, indicating that they may encode substantial world knowledge. Beyond
+realistic synthesis, they also exhibit emerging behaviors indicative of visual
+perception, modeling, and manipulation. Yet, an important question still
+remains: Are video models ready to serve as zero-shot reasoners in challenging
+visual reasoning scenarios? In this work, we conduct an empirical study to
+comprehensively investigate this question, focusing on the leading and popular
+Veo-3. We evaluate its reasoning behavior across 12 dimensions, including
+spatial, geometric, physical, temporal, and embodied logic, systematically
+characterizing both its strengths and failure modes. To standardize this study,
+we curate the evaluation data into MME-CoF, a compact benchmark that enables
+in-depth and thorough assessment of Chain-of-Frame (CoF) reasoning. Our
+findings reveal that while current video models demonstrate promising reasoning
+patterns on short-horizon spatial coherence, fine-grained grounding, and
+locally consistent dynamics, they remain limited in long-horizon causal
+reasoning, strict geometric constraints, and abstract logic. Overall, they are
+not yet reliable as standalone zero-shot reasoners, but exhibit encouraging
+signs as complementary visual engines alongside dedicated reasoning models.
+Project page: https://video-cof.github.io</p>
+                    </details>
+                </div>
+                <div class="paper-links">
+                    <a href="http://arxiv.org/pdf/2510.26802v1" target="_blank" class="btn-link">📄 PDF</a>
+                    <a href="http://arxiv.org/abs/2510.26802v1" target="_blank" class="btn-link">🔗 ArXiv</a>
+                </div>
+            </article>
+            
+
+            <article class="paper-card" data-tags="">
+                <h2 class="paper-title">
+                    <a href="http://arxiv.org/abs/2510.26790v1" target="_blank">Gistify! Codebase-Level Understanding via Runtime Execution</a>
+                </h2>
+                <div class="paper-meta">
+                    <span class="meta-item">📅 2025-10-30</span>
+                    <span class="meta-item">📖 ArXiv - cs.CL</span>
+                </div>
+                <div class="paper-authors">
+                    👥 Hyunji Lee, Minseon Kim, Chinmay Singh, Matheus Pereira, Atharv Sonwane et al.
+                </div>
+                <div class="paper-tags">
+                    
+                </div>
+                <div class="paper-abstract">
+                    <details>
+                        <summary>查看摘要</summary>
+                        <p>As coding agents are increasingly deployed in large codebases, the need to
+automatically design challenging, codebase-level evaluation is central. We
+propose Gistify, a task where a coding LLM must create a single, minimal,
+self-contained file that can reproduce a specific functionality of a codebase.
+The coding LLM is given full access to a codebase along with a specific
+entrypoint (e.g., a python command), and the generated file must replicate the
+output of the same command ran under the full codebase, while containing only
+the essential components necessary to execute the provided command. Success on
+Gistify requires both structural understanding of the codebase, accurate
+modeling of its execution flow as well as the ability to produce potentially
+large code patches. Our findings show that current state-of-the-art models
+struggle to reliably solve Gistify tasks, especially ones with long executions
+traces.</p>
+                    </details>
+                </div>
+                <div class="paper-links">
+                    <a href="http://arxiv.org/pdf/2510.26790v1" target="_blank" class="btn-link">📄 PDF</a>
+                    <a href="http://arxiv.org/abs/2510.26790v1" target="_blank" class="btn-link">🔗 ArXiv</a>
+                </div>
+            </article>
+            
+
+            <article class="paper-card" data-tags="Natural Language Processing,Machine Learning">
+                <h2 class="paper-title">
+                    <a href="http://arxiv.org/abs/2510.26788v1" target="_blank">Defeating the Training-Inference Mismatch via FP16</a>
+                </h2>
+                <div class="paper-meta">
+                    <span class="meta-item">📅 2025-10-30</span>
+                    <span class="meta-item">📖 ArXiv - cs.LG</span>
+                </div>
+                <div class="paper-authors">
+                    👥 Penghui Qi, Zichen Liu, Xiangxin Zhou, Tianyu Pang, Chao Du et al.
+                </div>
+                <div class="paper-tags">
+                    <span class="tag">Natural Language Processing</span><span class="tag">Machine Learning</span>
+                </div>
+                <div class="paper-abstract">
+                    <details>
+                        <summary>查看摘要</summary>
+                        <p>Reinforcement learning (RL) fine-tuning of large language models (LLMs) often
+suffers from instability due to the numerical mismatch between the training and
+inference policies. While prior work has attempted to mitigate this issue
+through algorithmic corrections or engineering alignments, we show that its
+root cause lies in the floating point precision itself. The widely adopted
+BF16, despite its large dynamic range, introduces large rounding errors that
+breaks the consistency between training and inference. In this work, we
+demonstrate that simply reverting to \textbf{FP16} effectively eliminates this
+mismatch. The change is simple, fully supported by modern frameworks with only
+a few lines of code change, and requires no modification to the model
+architecture or learning algorithm. Our results suggest that using FP16
+uniformly yields more stable optimization, faster convergence, and stronger
+performance across diverse tasks, algorithms and frameworks. We hope these
+findings motivate a broader reconsideration of precision trade-offs in RL
+fine-tuning.</p>
+                    </details>
+                </div>
+                <div class="paper-links">
+                    <a href="http://arxiv.org/pdf/2510.26788v1" target="_blank" class="btn-link">📄 PDF</a>
+                    <a href="http://arxiv.org/abs/2510.26788v1" target="_blank" class="btn-link">🔗 ArXiv</a>
+                </div>
+            </article>
+            
+
+            <article class="paper-card" data-tags="">
+                <h2 class="paper-title">
+                    <a href="http://arxiv.org/abs/2510.26787v1" target="_blank">Remote Labor Index: Measuring AI Automation of Remote Work</a>
+                </h2>
+                <div class="paper-meta">
+                    <span class="meta-item">📅 2025-10-30</span>
+                    <span class="meta-item">📖 ArXiv - cs.LG</span>
+                </div>
+                <div class="paper-authors">
+                    👥 Mantas Mazeika, Alice Gatti, Cristina Menghini, Udari Madhushani Sehwag, Shivam Singhal et al.
+                </div>
+                <div class="paper-tags">
+                    
+                </div>
+                <div class="paper-abstract">
+                    <details>
+                        <summary>查看摘要</summary>
+                        <p>AIs have made rapid progress on research-oriented benchmarks of knowledge and
+reasoning, but it remains unclear how these gains translate into economic value
+and automation. To measure this, we introduce the Remote Labor Index (RLI), a
+broadly multi-sector benchmark comprising real-world, economically valuable
+projects designed to evaluate end-to-end agent performance in practical
+settings. AI agents perform near the floor on RLI, with the highest-performing
+agent achieving an automation rate of 2.5%. These results help ground
+discussions of AI automation in empirical evidence, setting a common basis for
+tracking AI impacts and enabling stakeholders to proactively navigate AI-driven
+labor automation.</p>
+                    </details>
+                </div>
+                <div class="paper-links">
+                    <a href="http://arxiv.org/pdf/2510.26787v1" target="_blank" class="btn-link">📄 PDF</a>
+                    <a href="http://arxiv.org/abs/2510.26787v1" target="_blank" class="btn-link">🔗 ArXiv</a>
+                </div>
+            </article>
+            
+
+            <article class="paper-card" data-tags="Natural Language Processing">
+                <h2 class="paper-title">
+                    <a href="http://arxiv.org/abs/2510.26784v1" target="_blank">LLMs Process Lists With General Filter Heads</a>
+                </h2>
+                <div class="paper-meta">
+                    <span class="meta-item">📅 2025-10-30</span>
+                    <span class="meta-item">📖 ArXiv - cs.AI</span>
+                </div>
+                <div class="paper-authors">
+                    👥 Arnab Sen Sharma, Giordano Rogers, Natalie Shapira, David Bau
+                </div>
+                <div class="paper-tags">
+                    <span class="tag">Natural Language Processing</span>
+                </div>
+                <div class="paper-abstract">
+                    <details>
+                        <summary>查看摘要</summary>
+                        <p>We investigate the mechanisms underlying a range of list-processing tasks in
+LLMs, and we find that LLMs have learned to encode a compact, causal
+representation of a general filtering operation that mirrors the generic
+"filter" function of functional programming. Using causal mediation analysis on
+a diverse set of list-processing tasks, we find that a small number of
+attention heads, which we dub filter heads, encode a compact representation of
+the filtering predicate in their query states at certain tokens. We demonstrate
+that this predicate representation is general and portable: it can be extracted
+and reapplied to execute the same filtering operation on different collections,
+presented in different formats, languages, or even in tasks. However, we also
+identify situations where transformer LMs can exploit a different strategy for
+filtering: eagerly evaluating if an item satisfies the predicate and storing
+this intermediate result as a flag directly in the item representations. Our
+results reveal that transformer LMs can develop human-interpretable
+implementations of abstract computational operations that generalize in ways
+that are surprisingly similar to strategies used in traditional functional
+programming patterns.</p>
+                    </details>
+                </div>
+                <div class="paper-links">
+                    <a href="http://arxiv.org/pdf/2510.26784v1" target="_blank" class="btn-link">📄 PDF</a>
+                    <a href="http://arxiv.org/abs/2510.26784v1" target="_blank" class="btn-link">🔗 ArXiv</a>
+                </div>
+            </article>
+            
+
+            <article class="paper-card" data-tags="">
+                <h2 class="paper-title">
+                    <a href="http://arxiv.org/abs/2510.26782v1" target="_blank">Clone Deterministic 3D Worlds with Geometrically-Regularized World Models</a>
+                </h2>
+                <div class="paper-meta">
+                    <span class="meta-item">📅 2025-10-30</span>
+                    <span class="meta-item">📖 ArXiv - cs.LG</span>
+                </div>
+                <div class="paper-authors">
+                    👥 Zaishuo Xia, Yukuan Lu, Xinyi Li, Yifan Xu, Yubei Chen
+                </div>
+                <div class="paper-tags">
+                    
+                </div>
+                <div class="paper-abstract">
+                    <details>
+                        <summary>查看摘要</summary>
+                        <p>A world model is an internal model that simulates how the world evolves.
+Given past observations and actions, it predicts the future of both the
+embodied agent and its environment. Accurate world models are essential for
+enabling agents to think, plan, and reason effectively in complex, dynamic
+settings. Despite rapid progress, current world models remain brittle and
+degrade over long horizons. We argue that a central cause is representation
+quality: exteroceptive inputs (e.g., images) are high-dimensional, and lossy or
+entangled latents make dynamics learning unnecessarily hard. We therefore ask
+whether improving representation learning alone can substantially improve
+world-model performance. In this work, we take a step toward building a truly
+accurate world model by addressing a fundamental yet open problem: constructing
+a model that can fully clone and overfit to a deterministic 3D world. We
+propose Geometrically-Regularized World Models (GRWM), which enforces that
+consecutive points along a natural sensory trajectory remain close in latent
+representation space. This approach yields significantly improved latent
+representations that align closely with the true topology of the environment.
+GRWM is plug-and-play, requires only minimal architectural modification, scales
+with trajectory length, and is compatible with diverse latent generative
+backbones. Across deterministic 3D settings and long-horizon prediction tasks,
+GRWM significantly increases rollout fidelity and stability. Analyses show that
+its benefits stem from learning a latent manifold with superior geometric
+structure. These findings support a clear takeaway: improving representation
+learning is a direct and useful path to robust world models, delivering
+reliable long-horizon predictions without enlarging the dynamics module.</p>
+                    </details>
+                </div>
+                <div class="paper-links">
+                    <a href="http://arxiv.org/pdf/2510.26782v1" target="_blank" class="btn-link">📄 PDF</a>
+                    <a href="http://arxiv.org/abs/2510.26782v1" target="_blank" class="btn-link">🔗 ArXiv</a>
+                </div>
+            </article>
+            
+
+            <article class="paper-card" data-tags="">
+                <h2 class="paper-title">
+                    <a href="http://arxiv.org/abs/2510.26776v1" target="_blank">Faithful and Fast Influence Function via Advanced Sampling</a>
+                </h2>
+                <div class="paper-meta">
+                    <span class="meta-item">📅 2025-10-30</span>
+                    <span class="meta-item">📖 ArXiv - cs.LG</span>
+                </div>
+                <div class="paper-authors">
+                    👥 Jungyeon Koh, Hyeonsu Lyu, Jonggyu Jang, Hyun Jong Yang
+                </div>
+                <div class="paper-tags">
+                    
+                </div>
+                <div class="paper-abstract">
+                    <details>
+                        <summary>查看摘要</summary>
+                        <p>How can we explain the influence of training data on black-box models?
+Influence functions (IFs) offer a post-hoc solution by utilizing gradients and
+Hessians. However, computing the Hessian for an entire dataset is
+resource-intensive, necessitating a feasible alternative. A common approach
+involves randomly sampling a small subset of the training data, but this method
+often results in highly inconsistent IF estimates due to the high variance in
+sample configurations. To address this, we propose two advanced sampling
+techniques based on features and logits. These samplers select a small yet
+representative subset of the entire dataset by considering the stochastic
+distribution of features or logits, thereby enhancing the accuracy of IF
+estimations. We validate our approach through class removal experiments, a
+typical application of IFs, using the F1-score to measure how effectively the
+model forgets the removed class while maintaining inference consistency on the
+remaining classes. Our method reduces computation time by 30.1% and memory
+usage by 42.2%, or improves the F1-score by 2.5% compared to the baseline.</p>
+                    </details>
+                </div>
+                <div class="paper-links">
+                    <a href="http://arxiv.org/pdf/2510.26776v1" target="_blank" class="btn-link">📄 PDF</a>
+                    <a href="http://arxiv.org/abs/2510.26776v1" target="_blank" class="btn-link">🔗 ArXiv</a>
+                </div>
+            </article>
+            
+
+            <article class="paper-card" data-tags="">
+                <h2 class="paper-title">
+                    <a href="http://arxiv.org/abs/2510.26771v1" target="_blank">STaMP: Sequence Transformation and Mixed Precision for Low-Precision Activation Quantization</a>
+                </h2>
+                <div class="paper-meta">
+                    <span class="meta-item">📅 2025-10-30</span>
+                    <span class="meta-item">📖 ArXiv - cs.LG</span>
+                </div>
+                <div class="paper-authors">
+                    👥 Marco Federici, Riccardo Del Chiaro, Boris van Breugel, Paul Whatmough, Markus Nagel
+                </div>
+                <div class="paper-tags">
+                    
+                </div>
+                <div class="paper-abstract">
+                    <details>
+                        <summary>查看摘要</summary>
+                        <p>Quantization is the key method for reducing inference latency, power and
+memory footprint of generative AI models. However, accuracy often degrades
+sharply when activations are quantized below eight bits. Recent work suggests
+that invertible linear transformations (e.g. rotations) can aid quantization,
+by reparameterizing feature channels and weights. In this paper, we propose
+\textit{Sequence Transformation and Mixed Precision} (STaMP) quantization, a
+novel strategy that applies linear transformations along the \textit{sequence}
+dimension to exploit the strong local correlation in language and visual data.
+By keeping a small number of tokens in each intermediate activation at higher
+precision, we can maintain model accuracy at lower (average) activations
+bit-widths. We evaluate STaMP on recent LVM and LLM architectures,
+demonstrating that it significantly improves low bit width activation
+quantization and complements established activation and weight quantization
+methods including recent feature transformations.</p>
+                    </details>
+                </div>
+                <div class="paper-links">
+                    <a href="http://arxiv.org/pdf/2510.26771v1" target="_blank" class="btn-link">📄 PDF</a>
+                    <a href="http://arxiv.org/abs/2510.26771v1" target="_blank" class="btn-link">🔗 ArXiv</a>
+                </div>
+            </article>
+            
+
+            <article class="paper-card" data-tags="Natural Language Processing">
+                <h2 class="paper-title">
+                    <a href="http://arxiv.org/abs/2510.26768v1" target="_blank">AMO-Bench: Large Language Models Still Struggle in High School Math Competitions</a>
+                </h2>
+                <div class="paper-meta">
+                    <span class="meta-item">📅 2025-10-30</span>
+                    <span class="meta-item">📖 ArXiv - cs.CL</span>
+                </div>
+                <div class="paper-authors">
+                    👥 Shengnan An, Xunliang Cai, Xuezhi Cao, Xiaoyu Li, Yehao Lin et al.
+                </div>
+                <div class="paper-tags">
+                    <span class="tag">Natural Language Processing</span>
+                </div>
+                <div class="paper-abstract">
+                    <details>
+                        <summary>查看摘要</summary>
+                        <p>We present AMO-Bench, an Advanced Mathematical reasoning benchmark with
+Olympiad level or even higher difficulty, comprising 50 human-crafted problems.
+Existing benchmarks have widely leveraged high school math competitions for
+evaluating mathematical reasoning capabilities of large language models (LLMs).
+However, many existing math competitions are becoming less effective for
+assessing top-tier LLMs due to performance saturation (e.g., AIME24/25). To
+address this, AMO-Bench introduces more rigorous challenges by ensuring all 50
+problems are (1) cross-validated by experts to meet at least the International
+Mathematical Olympiad (IMO) difficulty standards, and (2) entirely original
+problems to prevent potential performance leakages from data memorization.
+Moreover, each problem in AMO-Bench requires only a final answer rather than a
+proof, enabling automatic and robust grading for evaluation. Experimental
+results across 26 LLMs on AMO-Bench show that even the best-performing model
+achieves only 52.4% accuracy on AMO-Bench, with most LLMs scoring below 40%.
+Beyond these poor performances, our further analysis reveals a promising
+scaling trend with increasing test-time compute on AMO-Bench. These results
+highlight the significant room for improving the mathematical reasoning in
+current LLMs. We release AMO-Bench to facilitate further research into
+advancing the reasoning abilities of language models.
+https://amo-bench.github.io/</p>
+                    </details>
+                </div>
+                <div class="paper-links">
+                    <a href="http://arxiv.org/pdf/2510.26768v1" target="_blank" class="btn-link">📄 PDF</a>
+                    <a href="http://arxiv.org/abs/2510.26768v1" target="_blank" class="btn-link">🔗 ArXiv</a>
+                </div>
+            </article>
+            
+
+            <article class="paper-card" data-tags="Robotics">
+                <h2 class="paper-title">
+                    <a href="http://arxiv.org/abs/2510.26752v1" target="_blank">The Oversight Game: Learning to Cooperatively Balance an AI Agent's Safety and Autonomy</a>
+                </h2>
+                <div class="paper-meta">
+                    <span class="meta-item">📅 2025-10-30</span>
+                    <span class="meta-item">📖 ArXiv - cs.AI</span>
+                </div>
+                <div class="paper-authors">
+                    👥 William Overman, Mohsen Bayati
+                </div>
+                <div class="paper-tags">
+                    <span class="tag">Robotics</span>
+                </div>
+                <div class="paper-abstract">
+                    <details>
+                        <summary>查看摘要</summary>
+                        <p>As increasingly capable agents are deployed, a central safety question is how
+to retain meaningful human control without modifying the underlying system. We
+study a minimal control interface where an agent chooses whether to act
+autonomously (play) or defer (ask), while a human simultaneously chooses
+whether to be permissive (trust) or to engage in oversight (oversee). If the
+agent defers, the human's choice determines the outcome, potentially leading to
+a corrective action or a system shutdown. We model this interaction as a
+two-player Markov Game. Our analysis focuses on cases where this game qualifies
+as a Markov Potential Game (MPG), a class of games where we can provide an
+alignment guarantee: under a structural assumption on the human's value
+function, any decision by the agent to act more autonomously that benefits
+itself cannot harm the human's value. We also analyze extensions to this MPG
+framework. Theoretically, this perspective provides conditions for a specific
+form of intrinsic alignment. If the reward structures of the human-agent game
+meet these conditions, we have a formal guarantee that the agent improving its
+own outcome will not harm the human's. Practically, this model motivates a
+transparent control layer with predictable incentives where the agent learns to
+defer when risky and act when safe, while its pretrained policy and the
+environment's reward structure remain untouched. Our gridworld simulation shows
+that through independent learning, the agent and human discover their optimal
+oversight roles. The agent learns to ask when uncertain and the human learns
+when to oversee, leading to an emergent collaboration that avoids safety
+violations introduced post-training. This demonstrates a practical method for
+making misaligned models safer after deployment.</p>
+                    </details>
+                </div>
+                <div class="paper-links">
+                    <a href="http://arxiv.org/pdf/2510.26752v1" target="_blank" class="btn-link">📄 PDF</a>
+                    <a href="http://arxiv.org/abs/2510.26752v1" target="_blank" class="btn-link">🔗 ArXiv</a>
+                </div>
+            </article>
+            
+        </div>
+    </main>
+    
+    <footer>
+        <div class="container">
+            <p>© 2025 DailyPaper | 数据来源: ArXiv | <a href="https://github.com/yourusername/DailyPaper" target="_blank">GitHub</a></p>
+        </div>
+    </footer>
+    
+    <script src="js/main.js"></script>
+</body>
+</html>

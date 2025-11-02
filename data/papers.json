@@ -1,0 +1,314 @@
+[
+  {
+    "id": "2510.26802v1",
+    "title": "Are Video Models Ready as Zero-Shot Reasoners? An Empirical Study with the MME-CoF Benchmark",
+    "authors": [
+      "Ziyu Guo",
+      "Xinyan Chen",
+      "Renrui Zhang",
+      "Ruichuan An",
+      "Yu Qi",
+      "Dongzhi Jiang",
+      "Xiangtai Li",
+      "Manyuan Zhang",
+      "Hongsheng Li",
+      "Pheng-Ann Heng"
+    ],
+    "abstract": "Recent video generation models can produce high-fidelity, temporally coherent\nvideos, indicating that they may encode substantial world knowledge. Beyond\nrealistic synthesis, they also exhibit emerging behaviors indicative of visual\nperception, modeling, and manipulation. Yet, an important question still\nremains: Are video models ready to serve as zero-shot reasoners in challenging\nvisual reasoning scenarios? In this work, we conduct an empirical study to\ncomprehensively investigate this question, focusing on the leading and popular\nVeo-3. We evaluate its reasoning behavior across 12 dimensions, including\nspatial, geometric, physical, temporal, and embodied logic, systematically\ncharacterizing both its strengths and failure modes. To standardize this study,\nwe curate the evaluation data into MME-CoF, a compact benchmark that enables\nin-depth and thorough assessment of Chain-of-Frame (CoF) reasoning. Our\nfindings reveal that while current video models demonstrate promising reasoning\npatterns on short-horizon spatial coherence, fine-grained grounding, and\nlocally consistent dynamics, they remain limited in long-horizon causal\nreasoning, strict geometric constraints, and abstract logic. Overall, they are\nnot yet reliable as standalone zero-shot reasoners, but exhibit encouraging\nsigns as complementary visual engines alongside dedicated reasoning models.\nProject page: https://video-cof.github.io",
+    "published": "2025-10-30",
+    "updated": "2025-10-30",
+    "categories": [
+      "cs.CV",
+      "cs.AI",
+      "cs.CL"
+    ],
+    "primary_category": "cs.CV",
+    "pdf_url": "http://arxiv.org/pdf/2510.26802v1",
+    "arxiv_url": "http://arxiv.org/abs/2510.26802v1",
+    "source": "ArXiv",
+    "venue": "cs.AI",
+    "tags": [
+      "Robotics"
+    ]
+  },
+  {
+    "id": "2510.26790v1",
+    "title": "Gistify! Codebase-Level Understanding via Runtime Execution",
+    "authors": [
+      "Hyunji Lee",
+      "Minseon Kim",
+      "Chinmay Singh",
+      "Matheus Pereira",
+      "Atharv Sonwane",
+      "Isadora White",
+      "Elias Stengel-Eskin",
+      "Mohit Bansal",
+      "Zhengyan Shi",
+      "Alessandro Sordoni",
+      "Marc-Alexandre Côté",
+      "Xingdi Yuan",
+      "Lucas Caccia"
+    ],
+    "abstract": "As coding agents are increasingly deployed in large codebases, the need to\nautomatically design challenging, codebase-level evaluation is central. We\npropose Gistify, a task where a coding LLM must create a single, minimal,\nself-contained file that can reproduce a specific functionality of a codebase.\nThe coding LLM is given full access to a codebase along with a specific\nentrypoint (e.g., a python command), and the generated file must replicate the\noutput of the same command ran under the full codebase, while containing only\nthe essential components necessary to execute the provided command. Success on\nGistify requires both structural understanding of the codebase, accurate\nmodeling of its execution flow as well as the ability to produce potentially\nlarge code patches. Our findings show that current state-of-the-art models\nstruggle to reliably solve Gistify tasks, especially ones with long executions\ntraces.",
+    "published": "2025-10-30",
+    "updated": "2025-10-30",
+    "categories": [
+      "cs.CL",
+      "cs.AI"
+    ],
+    "primary_category": "cs.CL",
+    "pdf_url": "http://arxiv.org/pdf/2510.26790v1",
+    "arxiv_url": "http://arxiv.org/abs/2510.26790v1",
+    "source": "ArXiv",
+    "venue": "cs.AI",
+    "tags": []
+  },
+  {
+    "id": "2510.26788v1",
+    "title": "Defeating the Training-Inference Mismatch via FP16",
+    "authors": [
+      "Penghui Qi",
+      "Zichen Liu",
+      "Xiangxin Zhou",
+      "Tianyu Pang",
+      "Chao Du",
+      "Wee Sun Lee",
+      "Min Lin"
+    ],
+    "abstract": "Reinforcement learning (RL) fine-tuning of large language models (LLMs) often\nsuffers from instability due to the numerical mismatch between the training and\ninference policies. While prior work has attempted to mitigate this issue\nthrough algorithmic corrections or engineering alignments, we show that its\nroot cause lies in the floating point precision itself. The widely adopted\nBF16, despite its large dynamic range, introduces large rounding errors that\nbreaks the consistency between training and inference. In this work, we\ndemonstrate that simply reverting to \\textbf{FP16} effectively eliminates this\nmismatch. The change is simple, fully supported by modern frameworks with only\na few lines of code change, and requires no modification to the model\narchitecture or learning algorithm. Our results suggest that using FP16\nuniformly yields more stable optimization, faster convergence, and stronger\nperformance across diverse tasks, algorithms and frameworks. We hope these\nfindings motivate a broader reconsideration of precision trade-offs in RL\nfine-tuning.",
+    "published": "2025-10-30",
+    "updated": "2025-10-30",
+    "categories": [
+      "cs.LG",
+      "cs.AI",
+      "cs.CL"
+    ],
+    "primary_category": "cs.LG",
+    "pdf_url": "http://arxiv.org/pdf/2510.26788v1",
+    "arxiv_url": "http://arxiv.org/abs/2510.26788v1",
+    "source": "ArXiv",
+    "venue": "cs.AI",
+    "tags": [
+      "Natural Language Processing",
+      "Machine Learning"
+    ]
+  },
+  {
+    "id": "2510.26787v1",
+    "title": "Remote Labor Index: Measuring AI Automation of Remote Work",
+    "authors": [
+      "Mantas Mazeika",
+      "Alice Gatti",
+      "Cristina Menghini",
+      "Udari Madhushani Sehwag",
+      "Shivam Singhal",
+      "Yury Orlovskiy",
+      "Steven Basart",
+      "Manasi Sharma",
+      "Denis Peskoff",
+      "Elaine Lau",
+      "Jaehyuk Lim",
+      "Lachlan Carroll",
+      "Alice Blair",
+      "Vinaya Sivakumar",
+      "Sumana Basu",
+      "Brad Kenstler",
+      "Yuntao Ma",
+      "Julian Michael",
+      "Xiaoke Li",
+      "Oliver Ingebretsen",
+      "Aditya Mehta",
+      "Jean Mottola",
+      "John Teichmann",
+      "Kevin Yu",
+      "Zaina Shaik",
+      "Adam Khoja",
+      "Richard Ren",
+      "Jason Hausenloy",
+      "Long Phan",
+      "Ye Htet",
+      "Ankit Aich",
+      "Tahseen Rabbani",
+      "Vivswan Shah",
+      "Andriy Novykov",
+      "Felix Binder",
+      "Kirill Chugunov",
+      "Luis Ramirez",
+      "Matias Geralnik",
+      "Hernán Mesura",
+      "Dean Lee",
+      "Ed-Yeremai Hernandez Cardona",
+      "Annette Diamond",
+      "Summer Yue",
+      "Alexandr Wang",
+      "Bing Liu",
+      "Ernesto Hernandez",
+      "Dan Hendrycks"
+    ],
+    "abstract": "AIs have made rapid progress on research-oriented benchmarks of knowledge and\nreasoning, but it remains unclear how these gains translate into economic value\nand automation. To measure this, we introduce the Remote Labor Index (RLI), a\nbroadly multi-sector benchmark comprising real-world, economically valuable\nprojects designed to evaluate end-to-end agent performance in practical\nsettings. AI agents perform near the floor on RLI, with the highest-performing\nagent achieving an automation rate of 2.5%. These results help ground\ndiscussions of AI automation in empirical evidence, setting a common basis for\ntracking AI impacts and enabling stakeholders to proactively navigate AI-driven\nlabor automation.",
+    "published": "2025-10-30",
+    "updated": "2025-10-30",
+    "categories": [
+      "cs.LG",
+      "cs.AI",
+      "cs.CL"
+    ],
+    "primary_category": "cs.LG",
+    "pdf_url": "http://arxiv.org/pdf/2510.26787v1",
+    "arxiv_url": "http://arxiv.org/abs/2510.26787v1",
+    "source": "ArXiv",
+    "venue": "cs.AI",
+    "tags": []
+  },
+  {
+    "id": "2510.26784v1",
+    "title": "LLMs Process Lists With General Filter Heads",
+    "authors": [
+      "Arnab Sen Sharma",
+      "Giordano Rogers",
+      "Natalie Shapira",
+      "David Bau"
+    ],
+    "abstract": "We investigate the mechanisms underlying a range of list-processing tasks in\nLLMs, and we find that LLMs have learned to encode a compact, causal\nrepresentation of a general filtering operation that mirrors the generic\n\"filter\" function of functional programming. Using causal mediation analysis on\na diverse set of list-processing tasks, we find that a small number of\nattention heads, which we dub filter heads, encode a compact representation of\nthe filtering predicate in their query states at certain tokens. We demonstrate\nthat this predicate representation is general and portable: it can be extracted\nand reapplied to execute the same filtering operation on different collections,\npresented in different formats, languages, or even in tasks. However, we also\nidentify situations where transformer LMs can exploit a different strategy for\nfiltering: eagerly evaluating if an item satisfies the predicate and storing\nthis intermediate result as a flag directly in the item representations. Our\nresults reveal that transformer LMs can develop human-interpretable\nimplementations of abstract computational operations that generalize in ways\nthat are surprisingly similar to strategies used in traditional functional\nprogramming patterns.",
+    "published": "2025-10-30",
+    "updated": "2025-10-30",
+    "categories": [
+      "cs.AI"
+    ],
+    "primary_category": "cs.AI",
+    "pdf_url": "http://arxiv.org/pdf/2510.26784v1",
+    "arxiv_url": "http://arxiv.org/abs/2510.26784v1",
+    "source": "ArXiv",
+    "venue": "cs.AI",
+    "tags": [
+      "Natural Language Processing"
+    ]
+  },
+  {
+    "id": "2510.26782v1",
+    "title": "Clone Deterministic 3D Worlds with Geometrically-Regularized World Models",
+    "authors": [
+      "Zaishuo Xia",
+      "Yukuan Lu",
+      "Xinyi Li",
+      "Yifan Xu",
+      "Yubei Chen"
+    ],
+    "abstract": "A world model is an internal model that simulates how the world evolves.\nGiven past observations and actions, it predicts the future of both the\nembodied agent and its environment. Accurate world models are essential for\nenabling agents to think, plan, and reason effectively in complex, dynamic\nsettings. Despite rapid progress, current world models remain brittle and\ndegrade over long horizons. We argue that a central cause is representation\nquality: exteroceptive inputs (e.g., images) are high-dimensional, and lossy or\nentangled latents make dynamics learning unnecessarily hard. We therefore ask\nwhether improving representation learning alone can substantially improve\nworld-model performance. In this work, we take a step toward building a truly\naccurate world model by addressing a fundamental yet open problem: constructing\na model that can fully clone and overfit to a deterministic 3D world. We\npropose Geometrically-Regularized World Models (GRWM), which enforces that\nconsecutive points along a natural sensory trajectory remain close in latent\nrepresentation space. This approach yields significantly improved latent\nrepresentations that align closely with the true topology of the environment.\nGRWM is plug-and-play, requires only minimal architectural modification, scales\nwith trajectory length, and is compatible with diverse latent generative\nbackbones. Across deterministic 3D settings and long-horizon prediction tasks,\nGRWM significantly increases rollout fidelity and stability. Analyses show that\nits benefits stem from learning a latent manifold with superior geometric\nstructure. These findings support a clear takeaway: improving representation\nlearning is a direct and useful path to robust world models, delivering\nreliable long-horizon predictions without enlarging the dynamics module.",
+    "published": "2025-10-30",
+    "updated": "2025-10-30",
+    "categories": [
+      "cs.LG",
+      "cs.AI",
+      "cs.CV"
+    ],
+    "primary_category": "cs.LG",
+    "pdf_url": "http://arxiv.org/pdf/2510.26782v1",
+    "arxiv_url": "http://arxiv.org/abs/2510.26782v1",
+    "source": "ArXiv",
+    "venue": "cs.AI",
+    "tags": []
+  },
+  {
+    "id": "2510.26776v1",
+    "title": "Faithful and Fast Influence Function via Advanced Sampling",
+    "authors": [
+      "Jungyeon Koh",
+      "Hyeonsu Lyu",
+      "Jonggyu Jang",
+      "Hyun Jong Yang"
+    ],
+    "abstract": "How can we explain the influence of training data on black-box models?\nInfluence functions (IFs) offer a post-hoc solution by utilizing gradients and\nHessians. However, computing the Hessian for an entire dataset is\nresource-intensive, necessitating a feasible alternative. A common approach\ninvolves randomly sampling a small subset of the training data, but this method\noften results in highly inconsistent IF estimates due to the high variance in\nsample configurations. To address this, we propose two advanced sampling\ntechniques based on features and logits. These samplers select a small yet\nrepresentative subset of the entire dataset by considering the stochastic\ndistribution of features or logits, thereby enhancing the accuracy of IF\nestimations. We validate our approach through class removal experiments, a\ntypical application of IFs, using the F1-score to measure how effectively the\nmodel forgets the removed class while maintaining inference consistency on the\nremaining classes. Our method reduces computation time by 30.1% and memory\nusage by 42.2%, or improves the F1-score by 2.5% compared to the baseline.",
+    "published": "2025-10-30",
+    "updated": "2025-10-30",
+    "categories": [
+      "cs.LG",
+      "cs.AI"
+    ],
+    "primary_category": "cs.LG",
+    "pdf_url": "http://arxiv.org/pdf/2510.26776v1",
+    "arxiv_url": "http://arxiv.org/abs/2510.26776v1",
+    "source": "ArXiv",
+    "venue": "cs.AI",
+    "tags": []
+  },
+  {
+    "id": "2510.26771v1",
+    "title": "STaMP: Sequence Transformation and Mixed Precision for Low-Precision Activation Quantization",
+    "authors": [
+      "Marco Federici",
+      "Riccardo Del Chiaro",
+      "Boris van Breugel",
+      "Paul Whatmough",
+      "Markus Nagel"
+    ],
+    "abstract": "Quantization is the key method for reducing inference latency, power and\nmemory footprint of generative AI models. However, accuracy often degrades\nsharply when activations are quantized below eight bits. Recent work suggests\nthat invertible linear transformations (e.g. rotations) can aid quantization,\nby reparameterizing feature channels and weights. In this paper, we propose\n\\textit{Sequence Transformation and Mixed Precision} (STaMP) quantization, a\nnovel strategy that applies linear transformations along the \\textit{sequence}\ndimension to exploit the strong local correlation in language and visual data.\nBy keeping a small number of tokens in each intermediate activation at higher\nprecision, we can maintain model accuracy at lower (average) activations\nbit-widths. We evaluate STaMP on recent LVM and LLM architectures,\ndemonstrating that it significantly improves low bit width activation\nquantization and complements established activation and weight quantization\nmethods including recent feature transformations.",
+    "published": "2025-10-30",
+    "updated": "2025-10-30",
+    "categories": [
+      "cs.LG",
+      "cs.AI"
+    ],
+    "primary_category": "cs.LG",
+    "pdf_url": "http://arxiv.org/pdf/2510.26771v1",
+    "arxiv_url": "http://arxiv.org/abs/2510.26771v1",
+    "source": "ArXiv",
+    "venue": "cs.AI",
+    "tags": []
+  },
+  {
+    "id": "2510.26768v1",
+    "title": "AMO-Bench: Large Language Models Still Struggle in High School Math Competitions",
+    "authors": [
+      "Shengnan An",
+      "Xunliang Cai",
+      "Xuezhi Cao",
+      "Xiaoyu Li",
+      "Yehao Lin",
+      "Junlin Liu",
+      "Xinxuan Lv",
+      "Dan Ma",
+      "Xuanlin Wang",
+      "Ziwen Wang",
+      "Shuang Zhou"
+    ],
+    "abstract": "We present AMO-Bench, an Advanced Mathematical reasoning benchmark with\nOlympiad level or even higher difficulty, comprising 50 human-crafted problems.\nExisting benchmarks have widely leveraged high school math competitions for\nevaluating mathematical reasoning capabilities of large language models (LLMs).\nHowever, many existing math competitions are becoming less effective for\nassessing top-tier LLMs due to performance saturation (e.g., AIME24/25). To\naddress this, AMO-Bench introduces more rigorous challenges by ensuring all 50\nproblems are (1) cross-validated by experts to meet at least the International\nMathematical Olympiad (IMO) difficulty standards, and (2) entirely original\nproblems to prevent potential performance leakages from data memorization.\nMoreover, each problem in AMO-Bench requires only a final answer rather than a\nproof, enabling automatic and robust grading for evaluation. Experimental\nresults across 26 LLMs on AMO-Bench show that even the best-performing model\nachieves only 52.4% accuracy on AMO-Bench, with most LLMs scoring below 40%.\nBeyond these poor performances, our further analysis reveals a promising\nscaling trend with increasing test-time compute on AMO-Bench. These results\nhighlight the significant room for improving the mathematical reasoning in\ncurrent LLMs. We release AMO-Bench to facilitate further research into\nadvancing the reasoning abilities of language models.\nhttps://amo-bench.github.io/",
+    "published": "2025-10-30",
+    "updated": "2025-10-30",
+    "categories": [
+      "cs.CL",
+      "cs.AI"
+    ],
+    "primary_category": "cs.CL",
+    "pdf_url": "http://arxiv.org/pdf/2510.26768v1",
+    "arxiv_url": "http://arxiv.org/abs/2510.26768v1",
+    "source": "ArXiv",
+    "venue": "cs.AI",
+    "tags": [
+      "Natural Language Processing"
+    ]
+  },
+  {
+    "id": "2510.26752v1",
+    "title": "The Oversight Game: Learning to Cooperatively Balance an AI Agent's Safety and Autonomy",
+    "authors": [
+      "William Overman",
+      "Mohsen Bayati"
+    ],
+    "abstract": "As increasingly capable agents are deployed, a central safety question is how\nto retain meaningful human control without modifying the underlying system. We\nstudy a minimal control interface where an agent chooses whether to act\nautonomously (play) or defer (ask), while a human simultaneously chooses\nwhether to be permissive (trust) or to engage in oversight (oversee). If the\nagent defers, the human's choice determines the outcome, potentially leading to\na corrective action or a system shutdown. We model this interaction as a\ntwo-player Markov Game. Our analysis focuses on cases where this game qualifies\nas a Markov Potential Game (MPG), a class of games where we can provide an\nalignment guarantee: under a structural assumption on the human's value\nfunction, any decision by the agent to act more autonomously that benefits\nitself cannot harm the human's value. We also analyze extensions to this MPG\nframework. Theoretically, this perspective provides conditions for a specific\nform of intrinsic alignment. If the reward structures of the human-agent game\nmeet these conditions, we have a formal guarantee that the agent improving its\nown outcome will not harm the human's. Practically, this model motivates a\ntransparent control layer with predictable incentives where the agent learns to\ndefer when risky and act when safe, while its pretrained policy and the\nenvironment's reward structure remain untouched. Our gridworld simulation shows\nthat through independent learning, the agent and human discover their optimal\noversight roles. The agent learns to ask when uncertain and the human learns\nwhen to oversee, leading to an emergent collaboration that avoids safety\nviolations introduced post-training. This demonstrates a practical method for\nmaking misaligned models safer after deployment.",
+    "published": "2025-10-30",
+    "updated": "2025-10-30",
+    "categories": [
+      "cs.AI",
+      "cs.LG"
+    ],
+    "primary_category": "cs.AI",
+    "pdf_url": "http://arxiv.org/pdf/2510.26752v1",
+    "arxiv_url": "http://arxiv.org/abs/2510.26752v1",
+    "source": "ArXiv",
+    "venue": "cs.AI",
+    "tags": [
+      "Robotics"
+    ]
+  }
+]
