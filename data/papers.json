@@ -1,5 +1,111 @@
 [
   {
+    "id": "2510.26776v2",
+    "title": "Faithful and Fast Influence Function via Advanced Sampling",
+    "authors": [
+      "Jungyeon Koh",
+      "Hyeonsu Lyu",
+      "Jonggyu Jang",
+      "Hyun Jong Yang"
+    ],
+    "abstract": "How can we explain the influence of training data on black-box models?\nInfluence functions (IFs) offer a post-hoc solution by utilizing gradients and\nHessians. However, computing the Hessian for an entire dataset is\nresource-intensive, necessitating a feasible alternative. A common approach\ninvolves randomly sampling a small subset of the training data, but this method\noften results in highly inconsistent IF estimates due to the high variance in\nsample configurations. To address this, we propose two advanced sampling\ntechniques based on features and logits. These samplers select a small yet\nrepresentative subset of the entire dataset by considering the stochastic\ndistribution of features or logits, thereby enhancing the accuracy of IF\nestimations. We validate our approach through class removal experiments, a\ntypical application of IFs, using the F1-score to measure how effectively the\nmodel forgets the removed class while maintaining inference consistency on the\nremaining classes. Our method reduces computation time by 30.1% and memory\nusage by 42.2%, or improves the F1-score by 2.5% compared to the baseline.",
+    "published": "2025-10-30",
+    "updated": "2025-10-31",
+    "categories": [
+      "cs.LG",
+      "cs.AI"
+    ],
+    "primary_category": "cs.LG",
+    "pdf_url": "http://arxiv.org/pdf/2510.26776v2",
+    "arxiv_url": "http://arxiv.org/abs/2510.26776v2",
+    "source": "ArXiv",
+    "venue": "cs.LG",
+    "comment": null,
+    "conference": null,
+    "tags": []
+  },
+  {
+    "id": "2510.26709v2",
+    "title": "An All-Reduce Compatible Top-K Compressor for Communication-Efficient Distributed Learning",
+    "authors": [
+      "Chuyan Chen",
+      "Chenyang Ma",
+      "Zhangxin Li",
+      "Yutong He",
+      "Yanjie Dong",
+      "Kun Yuan"
+    ],
+    "abstract": "Communication remains a central bottleneck in large-scale distributed machine\nlearning, and gradient sparsification has emerged as a promising strategy to\nalleviate this challenge. However, existing gradient compressors face notable\nlimitations: Rand-$K$ discards structural information and performs poorly in\npractice, while Top-$K$ preserves informative entries but loses the contraction\nproperty and requires costly All-Gather operations. In this paper, we propose\nARC-Top-$K$, an {All-Reduce}-Compatible Top-$K$ compressor that aligns sparsity\npatterns across nodes using a lightweight sketch of the gradient, enabling\nindex-free All-Reduce while preserving globally significant information.\nARC-Top-$K$ is provably contractive and, when combined with momentum error\nfeedback (EF21M), achieves linear speedup and sharper convergence rates than\nthe original EF21M under standard assumptions. Empirically, ARC-Top-$K$ matches\nthe accuracy of Top-$K$ while reducing wall-clock training time by up to\n60.7\\%, offering an efficient and scalable solution that combines the\nrobustness of Rand-$K$ with the strong performance of Top-$K$.",
+    "published": "2025-10-30",
+    "updated": "2025-10-31",
+    "categories": [
+      "cs.LG",
+      "cs.DC"
+    ],
+    "primary_category": "cs.LG",
+    "pdf_url": "http://arxiv.org/pdf/2510.26709v2",
+    "arxiv_url": "http://arxiv.org/abs/2510.26709v2",
+    "source": "ArXiv",
+    "venue": "cs.LG",
+    "comment": "8 pages, 2 figures",
+    "conference": null,
+    "tags": []
+  },
+  {
+    "id": "2510.26616v2",
+    "title": "Aeolus: A Multi-structural Flight Delay Dataset",
+    "authors": [
+      "Lin Xu",
+      "Xinyun Yuan",
+      "Yuxuan Liang",
+      "Suwan Yin",
+      "Yuankai Wu"
+    ],
+    "abstract": "We introduce Aeolus, a large-scale Multi-modal Flight Delay Dataset designed\nto advance research on flight delay prediction and support the development of\nfoundation models for tabular data. Existing datasets in this domain are\ntypically limited to flat tabular structures and fail to capture the\nspatiotemporal dynamics inherent in delay propagation. Aeolus addresses this\nlimitation by providing three aligned modalities: (i) a tabular dataset with\nrich operational, meteorological, and airportlevel features for over 50 million\nflights; (ii) a flight chain module that models delay propagation along\nsequential flight legs, capturing upstream and downstream dependencies; and\n(iii) a flight network graph that encodes shared aircraft, crew, and airport\nresource connections, enabling cross-flight relational reasoning. The dataset\nis carefully constructed with temporal splits, comprehensive features, and\nstrict leakage prevention to support realistic and reproducible machine\nlearning evaluation. Aeolus supports a broad range of tasks, including\nregression, classification, temporal structure modeling, and graph learning,\nserving as a unified benchmark across tabular, sequential, and graph\nmodalities. We release baseline experiments and preprocessing tools to\nfacilitate adoption. Aeolus fills a key gap for both domain-specific modeling\nand general-purpose structured data research.Our source code and data can be\naccessed at https://github.com/Flnny/Delay-data",
+    "published": "2025-10-30",
+    "updated": "2025-10-31",
+    "categories": [
+      "cs.LG",
+      "cs.AI"
+    ],
+    "primary_category": "cs.LG",
+    "pdf_url": "http://arxiv.org/pdf/2510.26616v2",
+    "arxiv_url": "http://arxiv.org/abs/2510.26616v2",
+    "source": "ArXiv",
+    "venue": "cs.LG",
+    "comment": null,
+    "conference": null,
+    "tags": []
+  },
+  {
+    "id": "2510.26301v2",
+    "title": "Offline Clustering of Preference Learning with Active-data Augmentation",
+    "authors": [
+      "Jingyuan Liu",
+      "Fatemeh Ghaffari",
+      "Xuchuang Wang",
+      "Xutong Liu",
+      "Mohammad Hajiesmaili",
+      "Carlee Joe-Wong"
+    ],
+    "abstract": "Preference learning from pairwise feedback is a widely adopted framework in\napplications such as reinforcement learning with human feedback and\nrecommendations. In many practical settings, however, user interactions are\nlimited or costly, making offline preference learning necessary. Moreover,\nreal-world preference learning often involves users with different preferences.\nFor example, annotators from different backgrounds may rank the same responses\ndifferently. This setting presents two central challenges: (1) identifying\nsimilarity across users to effectively aggregate data, especially under\nscenarios where offline data is imbalanced across dimensions, and (2) handling\nthe imbalanced offline data where some preference dimensions are\nunderrepresented. To address these challenges, we study the Offline Clustering\nof Preference Learning problem, where the learner has access to fixed datasets\nfrom multiple users with potentially different preferences and aims to maximize\nutility for a test user. To tackle the first challenge, we first propose\nOff-C$^2$PL for the pure offline setting, where the learner relies solely on\noffline data. Our theoretical analysis provides a suboptimality bound that\nexplicitly captures the tradeoff between sample noise and bias. To address the\nsecond challenge of inbalanced data, we extend our framework to the setting\nwith active-data augmentation where the learner is allowed to select a limited\nnumber of additional active-data for the test user based on the cluster\nstructure learned by Off-C$^2$PL. In this setting, our second algorithm,\nA$^2$-Off-C$^2$PL, actively selects samples that target the least-informative\ndimensions of the test user's preference. We prove that these actively\ncollected samples contribute more effectively than offline ones. Finally, we\nvalidate our theoretical results through simulations on synthetic and\nreal-world datasets.",
+    "published": "2025-10-30",
+    "updated": "2025-10-31",
+    "categories": [
+      "cs.LG"
+    ],
+    "primary_category": "cs.LG",
+    "pdf_url": "http://arxiv.org/pdf/2510.26301v2",
+    "arxiv_url": "http://arxiv.org/abs/2510.26301v2",
+    "source": "ArXiv",
+    "venue": "cs.LG",
+    "comment": null,
+    "conference": null,
+    "tags": [
+      "Machine Learning"
+    ]
+  },
+  {
     "id": "2510.26745v1",
     "title": "Deep sequence models tend to memorize geometrically; it is unclear why",
     "authors": [
@@ -15034,6 +15140,34 @@
     "tags": []
   },
   {
+    "id": "2510.23018v2",
+    "title": "Improving Product Search Relevance with EAR-MP: A Solution for the CIKM 2025 AnalytiCup",
+    "authors": [
+      "JaeEun Lim",
+      "Soomin Kim",
+      "Jaeyong Seo",
+      "Iori Ono",
+      "Qimu Ran",
+      "Jae-woong Lee"
+    ],
+    "abstract": "Multilingual e-commerce search is challenging due to linguistic diversity and\nthe noise inherent in user-generated queries. This paper documents the solution\nemployed by our team (EAR-MP) for the CIKM 2025 AnalytiCup, which addresses two\ncore tasks: Query-Category (QC) relevance and Query-Item (QI) relevance. Our\napproach first normalizes the multilingual dataset by translating all text into\nEnglish, then mitigates noise through extensive data cleaning and\nnormalization. For model training, we build on DeBERTa-v3-large and improve\nperformance with label smoothing, self-distillation, and dropout. In addition,\nwe introduce task-specific upgrades, including hierarchical token injection for\nQC and a hybrid scoring mechanism for QI. Under constrained compute, our method\nachieves competitive results, attaining an F1 score of 0.8796 on QC and 0.8744\non QI. These findings underscore the importance of systematic data\npreprocessing and tailored training strategies for building robust,\nresource-efficient multilingual relevance systems.",
+    "published": "2025-10-27",
+    "updated": "2025-10-31",
+    "categories": [
+      "cs.IR"
+    ],
+    "primary_category": "cs.IR",
+    "pdf_url": "http://arxiv.org/pdf/2510.23018v2",
+    "arxiv_url": "http://arxiv.org/abs/2510.23018v2",
+    "source": "ArXiv",
+    "venue": "cs.IR",
+    "comment": null,
+    "conference": null,
+    "tags": [
+      "Natural Language Processing"
+    ]
+  },
+  {
     "id": "2510.23544v1",
     "title": "LimRank: Less is More for Reasoning-Intensive Information Reranking",
     "authors": [
@@ -15304,6 +15438,34 @@
     "tags": [
       "Natural Language Processing"
     ]
+  },
+  {
+    "id": "2510.22733v2",
+    "title": "E2Rank: Your Text Embedding can Also be an Effective and Efficient Listwise Reranker",
+    "authors": [
+      "Qi Liu",
+      "Yanzhao Zhang",
+      "Mingxin Li",
+      "Dingkun Long",
+      "Pengjun Xie",
+      "Jiaxin Mao"
+    ],
+    "abstract": "Text embedding models serve as a fundamental component in real-world search\napplications. By mapping queries and documents into a shared embedding space,\nthey deliver competitive retrieval performance with high efficiency. However,\ntheir ranking fidelity remains limited compared to dedicated rerankers,\nespecially recent LLM-based listwise rerankers, which capture fine-grained\nquery-document and document-document interactions. In this paper, we propose a\nsimple yet effective unified framework E2Rank, means Efficient Embedding-based\nRanking (also means Embedding-to-Rank), which extends a single text embedding\nmodel to perform both high-quality retrieval and listwise reranking through\ncontinued training under a listwise ranking objective, thereby achieving strong\neffectiveness with remarkable efficiency. By applying cosine similarity between\nthe query and document embeddings as a unified ranking function, the listwise\nranking prompt, which is constructed from the original query and its candidate\ndocuments, serves as an enhanced query enriched with signals from the top-K\ndocuments, akin to pseudo-relevance feedback (PRF) in traditional retrieval\nmodels. This design preserves the efficiency and representational quality of\nthe base embedding model while significantly improving its reranking\nperformance. Empirically, E2Rank achieves state-of-the-art results on the BEIR\nreranking benchmark and demonstrates competitive performance on the\nreasoning-intensive BRIGHT benchmark, with very low reranking latency. We also\nshow that the ranking training process improves embedding performance on the\nMTEB benchmark. Our findings indicate that a single embedding model can\neffectively unify retrieval and reranking, offering both computational\nefficiency and competitive ranking accuracy.",
+    "published": "2025-10-26",
+    "updated": "2025-10-31",
+    "categories": [
+      "cs.CL",
+      "cs.AI",
+      "cs.IR"
+    ],
+    "primary_category": "cs.CL",
+    "pdf_url": "http://arxiv.org/pdf/2510.22733v2",
+    "arxiv_url": "http://arxiv.org/abs/2510.22733v2",
+    "source": "ArXiv",
+    "venue": "cs.IR",
+    "comment": "Code and models are avaliable at https://alibaba-nlp.github.io/E2Rank",
+    "conference": null,
+    "tags": []
   },
   {
     "id": "2510.22865v1",
