@@ -150,18 +150,19 @@ class PaperFetcher:
         import re
         
         # 尝试匹配常见模式并提取完整描述
-        # 模式1: "Accepted at/to CVPR 2025" 或 "Published in ICCV 2025"
-        # 支持更多变体：at the, by the, for, in the 等
-        pattern1 = r'(?:accepted?\s+(?:at\s+(?:the\s+)?|to\s+(?:the\s+)?|by\s+(?:the\s+)?|for\s+(?:the\s+)?)|published\s+(?:in\s+(?:the\s+)?|at\s+(?:the\s+)?|with\s+)|to\s+appear\s+(?:in\s+(?:the\s+)?|at\s+(?:the\s+)?))\s*([^.,;()\n]+?)(?:[.,;(]|$)'
+        # 模式1: "Accepted at/to CVPR 2025" 或 "Published in ICCV 2025" 或 "Published with Journal Name (Acronym)"
+        # 支持更多变体：at the, by the, for, in the, with 等
+        # 特别处理期刊名称，可能包含括号中的缩写
+        pattern1 = r'(?:accepted?\s+(?:at\s+(?:the\s+)?|to\s+(?:the\s+)?|by\s+(?:the\s+)?|for\s+(?:the\s+)?)|published\s+(?:in\s+(?:the\s+)?|at\s+(?:the\s+)?|with\s+)|to\s+appear\s+(?:in\s+(?:the\s+)?|at\s+(?:the\s+)?))\s*([^.,;\n]+?)(?:\s*[.,;]|$)'
         match = re.search(pattern1, comment, re.IGNORECASE)
         if match:
             venue_text = match.group(1).strip()
-            # 清理多余空格、换行符和尾部的"等"
+            # 清理多余空格、换行符
             venue_text = ' '.join(venue_text.split())
-            # 移除尾部的位置信息（如 ", Washington, DC, USA"）
+            # 移除尾部的位置信息（如 ", Washington, DC, USA"），但保留括号内容如 (IJETT)
             venue_text = re.sub(r',\s*[A-Z][a-zA-Z\s,]+,\s*[A-Z]{2,}(?:\s*,\s*[A-Z]{2,4})?$', '', venue_text)
-            # 限制长度，避免过长
-            if 5 < len(venue_text) <= 150:
+            # 放宽长度限制，支持完整的期刊名称
+            if 5 < len(venue_text) <= 200:
                 return venue_text
         
         # 模式2: 直接以会议名开头，如 "CVPR 2025, Main Conference"

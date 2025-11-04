@@ -547,6 +547,10 @@ main {
     letter-spacing: 0.3px;
     box-shadow: 0 2px 6px rgba(0,0,0,0.15);
     margin-left: 0.5rem;
+    max-width: 600px;
+    white-space: normal;
+    word-wrap: break-word;
+    line-height: 1.4;
 }
 
 .badge-neurips {
