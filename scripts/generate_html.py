@@ -816,7 +816,7 @@ document.addEventListener('DOMContentLoaded', function() {
     let searchTerm = '';
     let filteredPapers = [];
     let loadedCount = 0;
-    const initialBatchSize = 50;  // 第一次加载50个
+    const initialBatchSize = 20;  // 第一次加载20个
     const subsequentBatchSize = 10;  // 后续每次加载10个
     let isLoading = false;
     let observer = null;
@@ -970,6 +970,43 @@ document.addEventListener('DOMContentLoaded', function() {
         return { class: badgeClass, text: conference };
     }
     
+    // 更新研究领域按钮的数量
+    function updateCategoryButtonCounts() {
+        // 先筛选出符合当前状态的论文
+        const statusFilteredPapers = allPapersData.filter(paper => {
+            const status = paper.conference ? 'published' : 'preprint';
+            return currentStatus === 'all' || status === currentStatus;
+        });
+        
+        // 计算各个领域的数量
+        const categoryCounts = {
+            'all': statusFilteredPapers.length,
+            'Computer Vision': 0,
+            'Natural Language Processing': 0,
+            'Machine Learning': 0,
+            'Robotics': 0,
+            'Multimodal': 0
+        };
+        
+        statusFilteredPapers.forEach(paper => {
+            const tags = paper.tags || [];
+            tags.forEach(tag => {
+                if (categoryCounts.hasOwnProperty(tag)) {
+                    categoryCounts[tag]++;
+                }
+            });
+        });
+        
+        // 更新按钮文本
+        categoryBtns.forEach(btn => {
+            const category = btn.dataset.category;
+            const displayName = category === 'all' ? '全部' : 
+                               category === 'Natural Language Processing' ? 'NLP' : category;
+            const count = categoryCounts[category] || 0;
+            btn.textContent = `${displayName} (${count})`;
+        });
+    }
+    
     // 筛选和排序论文
     function filterAndSortPapers() {
         console.log('Filtering papers:', { currentStatus, currentCategory, searchTerm, currentSort });
@@ -1000,6 +1037,9 @@ document.addEventListener('DOMContentLoaded', function() {
                 return dateA - dateB;
             }
         });
+        
+        // 更新研究领域按钮的数量
+        updateCategoryButtonCounts();
         
         // 更新显示
         if (resultsCount) {
