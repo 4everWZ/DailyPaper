@@ -85,6 +85,15 @@ class HTMLGenerator:
     
     def generate_index_html(self):
         """生成主页 HTML"""
+        # 计算各分类数量
+        published_count = sum(1 for p in self.papers if p.get('conference'))
+        preprint_count = sum(1 for p in self.papers if not p.get('conference'))
+        cv_count = sum(1 for p in self.papers if 'Computer Vision' in p.get('tags', []))
+        nlp_count = sum(1 for p in self.papers if 'Natural Language Processing' in p.get('tags', []))
+        ml_count = sum(1 for p in self.papers if 'Machine Learning' in p.get('tags', []))
+        robotics_count = sum(1 for p in self.papers if 'Robotics' in p.get('tags', []))
+        multimodal_count = sum(1 for p in self.papers if 'Multimodal' in p.get('tags', []))
+        
         html = f"""<!DOCTYPE html>
 <html lang="zh-CN">
 <head>
@@ -105,7 +114,7 @@ class HTMLGenerator:
     <nav class="container">
         <div class="filter-section">
             <div class="filter-group">
-                <label class="filter-label">� 月份：</label>
+                <label class="filter-label">📅 月份：</label>
                 <div class="filters month-filters">
                     <button class="filter-btn month-btn active" data-month="all">全部 ({len(self.papers)})</button>
                     {self.generate_month_buttons()}
@@ -114,24 +123,24 @@ class HTMLGenerator:
             <div class="filter-group">
                 <label class="filter-label">📌 发表状态：</label>
                 <div class="filters status-filters">
-                    <button class="filter-btn status-btn active" data-status="all">全部</button>
-                    <button class="filter-btn status-btn" data-status="published">已发表</button>
-                    <button class="filter-btn status-btn" data-status="preprint">预印本</button>
+                    <button class="filter-btn status-btn active" data-status="all">全部 ({len(self.papers)})</button>
+                    <button class="filter-btn status-btn" data-status="published">已发表 ({published_count})</button>
+                    <button class="filter-btn status-btn" data-status="preprint">预印本 ({preprint_count})</button>
                 </div>
             </div>
             <div class="filter-group">
                 <label class="filter-label">🏷️ 研究领域：</label>
                 <div class="filters category-filters">
-                    <button class="filter-btn category-btn active" data-category="all">全部</button>
-                    <button class="filter-btn category-btn" data-category="Computer Vision">Computer Vision</button>
-                    <button class="filter-btn category-btn" data-category="Natural Language Processing">NLP</button>
-                    <button class="filter-btn category-btn" data-category="Machine Learning">Machine Learning</button>
-                    <button class="filter-btn category-btn" data-category="Robotics">Robotics</button>
-                    <button class="filter-btn category-btn" data-category="Multimodal">Multimodal</button>
+                    <button class="filter-btn category-btn active" data-category="all">全部 ({len(self.papers)})</button>
+                    <button class="filter-btn category-btn" data-category="Computer Vision">Computer Vision ({cv_count})</button>
+                    <button class="filter-btn category-btn" data-category="Natural Language Processing">NLP ({nlp_count})</button>
+                    <button class="filter-btn category-btn" data-category="Machine Learning">Machine Learning ({ml_count})</button>
+                    <button class="filter-btn category-btn" data-category="Robotics">Robotics ({robotics_count})</button>
+                    <button class="filter-btn category-btn" data-category="Multimodal">Multimodal ({multimodal_count})</button>
                 </div>
             </div>
             <div class="filter-group">
-                <label class="filter-label">� 排序方式：</label>
+                <label class="filter-label">🔄 排序方式：</label>
                 <div class="filters sort-filters">
                     <button class="filter-btn sort-btn active" data-sort="date-desc">最新优先</button>
                     <button class="filter-btn sort-btn" data-sort="date-asc">最早优先</button>
@@ -478,47 +487,47 @@ main {
     box-shadow: 0 4px 20px rgba(0,0,0,0.1);
 }
 
-/* Venue 徽章 */
+/* Venue 徽章 - 增强对比度和可见性 */
 .venue-badge {
-    position: absolute;
-    top: 0.8rem;
-    right: 0.8rem;
-    padding: 0.3rem 0.8rem;
-    border-radius: 4px;
-    font-size: 0.75rem;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
+    display: inline-block;
+    padding: 0.4rem 0.9rem;
+    border-radius: 6px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-transform: none;
+    letter-spacing: 0.3px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+    margin-left: 0.5rem;
 }
 
-.venue-neurips {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+.badge-neurips {
+    background: #6B46C1;
     color: white;
 }
 
-.venue-cvpr, .venue-iccv, .venue-eccv {
-    background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+.badge-cvpr, .badge-iccv, .badge-eccv {
+    background: #E53E3E;
     color: white;
 }
 
-.venue-icml, .venue-iclr {
-    background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+.badge-icml, .badge-iclr {
+    background: #3182CE;
     color: white;
 }
 
-.venue-acl, .venue-emnlp {
-    background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);
+.badge-acl, .badge-emnlp, .badge-naacl {
+    background: #38A169;
     color: white;
 }
 
-.venue-aaai, .venue-ijcai {
-    background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);
+.badge-aaai, .badge-ijcai {
+    background: #D69E2E;
     color: white;
 }
 
-.venue-other {
-    background: #e8f5e9;
-    color: #2e7d32;
+.badge-published {
+    background: #4A5568;
+    color: white;
 }
 
 .preprint {

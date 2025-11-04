@@ -114,6 +114,15 @@ class PaperFetcher:
         
         comment = comment.strip()
         
+        # 预处理：移除页数、图表等信息
+        import re
+        # 移除 "X pages, Y figures, Z tables" 等信息
+        comment = re.sub(r'\d+\s*pages?[,;]?\s*', '', comment, flags=re.IGNORECASE)
+        comment = re.sub(r'\d+\s*figures?[,;]?\s*', '', comment, flags=re.IGNORECASE)
+        comment = re.sub(r'\d+\s*tables?[,;]?\s*', '', comment, flags=re.IGNORECASE)
+        comment = re.sub(r'\d+\s*appendices[,;]?\s*', '', comment, flags=re.IGNORECASE)
+        comment = ' '.join(comment.split())  # 清理多余空格
+        
         # 如果是 preprint，返回 None
         if 'preprint' in comment.lower() and 'accepted' not in comment.lower():
             return None
