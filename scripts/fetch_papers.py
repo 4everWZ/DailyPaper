@@ -153,7 +153,8 @@ class PaperFetcher:
         # 模式1: "Accepted at/to CVPR 2025" 或 "Published in ICCV 2025" 或 "Published with Journal Name (Acronym)"
         # 支持更多变体：at the, by the, for, in the, with 等
         # 特别处理期刊名称，可能包含括号中的缩写
-        pattern1 = r'(?:accepted?\s+(?:at\s+(?:the\s+)?|to\s+(?:the\s+)?|by\s+(?:the\s+)?|for\s+(?:the\s+)?)|published\s+(?:in\s+(?:the\s+)?|at\s+(?:the\s+)?|with\s+)|to\s+appear\s+(?:in\s+(?:the\s+)?|at\s+(?:the\s+)?))\s*([^.,;\n]+?)(?:\s*[.,;]|$)'
+        # 使用 .+? 贪婪匹配到逗号、句号、分号或字符串结尾（\Z）
+        pattern1 = r'(?:accepted?\s+(?:at\s+(?:the\s+)?|to\s+(?:the\s+)?|by\s+(?:the\s+)?|for\s+(?:the\s+)?)|published\s+(?:in\s+(?:the\s+)?|at\s+(?:the\s+)?|with\s+)|to\s+appear\s+(?:in\s+(?:the\s+)?|at\s+(?:the\s+)?))\s*(.+?)(?:[.,;]|\Z)'
         match = re.search(pattern1, comment, re.IGNORECASE)
         if match:
             venue_text = match.group(1).strip()
