@@ -1,5 +1,311 @@
 [
   {
+    "id": "2510.27630v2",
+    "title": "Interaction as Intelligence Part II: Asynchronous Human-Agent Rollout for Long-Horizon Task Training",
+    "authors": [
+      "Dayuan Fu",
+      "Yunze Wu",
+      "Xiaojie Cai",
+      "Lyumanshan Ye",
+      "Shijie Xia",
+      "Zhen Huang",
+      "Weiye Si",
+      "Tianze Xu",
+      "Jie Sun",
+      "Keyu Li",
+      "Mohan Jiang",
+      "Junfei Wang",
+      "Qishuo Hua",
+      "Pengrui Lu",
+      "Yang Xiao",
+      "Pengfei Liu"
+    ],
+    "abstract": "Large Language Model (LLM) agents have recently shown strong potential in\ndomains such as automated coding, deep research, and graphical user interface\nmanipulation. However, training them to succeed on long-horizon,\ndomain-specialized tasks remains challenging. Current methods primarily fall\ninto two categories. The first relies on dense human annotations through\nbehavior cloning, which is prohibitively expensive for long-horizon tasks that\ncan take days or months. The second depends on outcome-driven sampling, which\noften collapses due to the rarity of valid positive trajectories on\ndomain-specialized tasks. We introduce Apollo, a sampling framework that\nintegrates asynchronous human guidance with action-level data filtering.\nInstead of requiring annotators to shadow every step, Apollo allows them to\nintervene only when the agent drifts from a promising trajectory, by providing\nprior knowledge, strategic advice, etc. This lightweight design makes it\npossible to sustain interactions for over 30 hours and produces valuable\ntrajectories at a lower cost. Apollo then applies supervision control to filter\nout sub-optimal actions and prevent error propagation. Together, these\ncomponents enable reliable and effective data collection in long-horizon\nenvironments. To demonstrate the effectiveness of Apollo, we evaluate it using\nInnovatorBench. Our experiments show that when applied to train the GLM-4.5\nmodel on InnovatorBench, Apollo achieves more than a 50% improvement over the\nuntrained baseline and a 28% improvement over a variant trained without human\ninteraction. These results highlight the critical role of human-in-the-loop\nsampling and the robustness of Apollo's design in handling long-horizon,\ndomain-specialized tasks.",
+    "published": "2025-10-31",
+    "updated": "2025-11-03",
+    "categories": [
+      "cs.AI"
+    ],
+    "primary_category": "cs.AI",
+    "pdf_url": "http://arxiv.org/pdf/2510.27630v2",
+    "arxiv_url": "http://arxiv.org/abs/2510.27630v2",
+    "source": "ArXiv",
+    "venue": "cs.AI",
+    "comment": null,
+    "conference": null,
+    "tags": [
+      "Robotics",
+      "Natural Language Processing"
+    ]
+  },
+  {
+    "id": "2510.27629v2",
+    "title": "Best Practices for Biorisk Evaluations on Open-Weight Bio-Foundation Models",
+    "authors": [
+      "Boyi Wei",
+      "Zora Che",
+      "Nathaniel Li",
+      "Udari Madhushani Sehwag",
+      "Jasper Götting",
+      "Samira Nedungadi",
+      "Julian Michael",
+      "Summer Yue",
+      "Dan Hendrycks",
+      "Peter Henderson",
+      "Zifan Wang",
+      "Seth Donoughe",
+      "Mantas Mazeika"
+    ],
+    "abstract": "Open-weight bio-foundation models present a dual-use dilemma. While holding\ngreat promise for accelerating scientific research and drug development, they\ncould also enable bad actors to develop more deadly bioweapons. To mitigate the\nrisk posed by these models, current approaches focus on filtering biohazardous\ndata during pre-training. However, the effectiveness of such an approach\nremains unclear, particularly against determined actors who might fine-tune\nthese models for malicious use. To address this gap, we propose \\eval, a\nframework to evaluate the robustness of procedures that are intended to reduce\nthe dual-use capabilities of bio-foundation models. \\eval assesses models'\nvirus understanding through three lenses, including sequence modeling,\nmutational effects prediction, and virulence prediction. Our results show that\ncurrent filtering practices may not be particularly effective: Excluded\nknowledge can be rapidly recovered in some cases via fine-tuning, and exhibits\nbroader generalizability in sequence modeling. Furthermore, dual-use signals\nmay already reside in the pretrained representations, and can be elicited via\nsimple linear probing. These findings highlight the challenges of data\nfiltering as a standalone procedure, underscoring the need for further research\ninto robust safety and security strategies for open-weight bio-foundation\nmodels.",
+    "published": "2025-10-31",
+    "updated": "2025-11-03",
+    "categories": [
+      "cs.CR",
+      "cs.AI"
+    ],
+    "primary_category": "cs.CR",
+    "pdf_url": "http://arxiv.org/pdf/2510.27629v2",
+    "arxiv_url": "http://arxiv.org/abs/2510.27629v2",
+    "source": "ArXiv",
+    "venue": "cs.AI",
+    "comment": "17 Pages, 5 figures",
+    "conference": null,
+    "tags": []
+  },
+  {
+    "id": "2510.27598v2",
+    "title": "InnovatorBench: Evaluating Agents' Ability to Conduct Innovative LLM Research",
+    "authors": [
+      "Yunze Wu",
+      "Dayuan Fu",
+      "Weiye Si",
+      "Zhen Huang",
+      "Mohan Jiang",
+      "Keyu Li",
+      "Shijie Xia",
+      "Jie Sun",
+      "Tianze Xu",
+      "Xiangkun Hu",
+      "Pengrui Lu",
+      "Xiaojie Cai",
+      "Lyumanshan Ye",
+      "Wenhong Zhu",
+      "Yang Xiao",
+      "Pengfei Liu"
+    ],
+    "abstract": "AI agents could accelerate scientific discovery by automating hypothesis\nformation, experiment design, coding, execution, and analysis, yet existing\nbenchmarks probe narrow skills in simplified settings. To address this gap, we\nintroduce InnovatorBench, a benchmark-platform pair for realistic, end-to-end\nassessment of agents performing Large Language Model (LLM) research. It\ncomprises 20 tasks spanning Data Construction, Filtering, Augmentation, Loss\nDesign, Reward Design, and Scaffold Construction, which require runnable\nartifacts and assessment of correctness, performance, output quality, and\nuncertainty. To support agent operation, we develop ResearchGym, a research\nenvironment offering rich action spaces, distributed and long-horizon\nexecution, asynchronous monitoring, and snapshot saving. We also implement a\nlightweight ReAct agent that couples explicit reasoning with executable\nplanning using frontier models such as Claude-4, GPT-5, GLM-4.5, and Kimi-K2.\nOur experiments demonstrate that while frontier models show promise in\ncode-driven research tasks, they struggle with fragile algorithm-related tasks\nand long-horizon decision making, such as impatience, poor resource management,\nand overreliance on template-based reasoning. Furthermore, agents require over\n11 hours to achieve their best performance on InnovatorBench, underscoring the\nbenchmark's difficulty and showing the potential of InnovatorBench to be the\nnext generation of code-based research benchmark.",
+    "published": "2025-10-31",
+    "updated": "2025-11-03",
+    "categories": [
+      "cs.AI"
+    ],
+    "primary_category": "cs.AI",
+    "pdf_url": "http://arxiv.org/pdf/2510.27598v2",
+    "arxiv_url": "http://arxiv.org/abs/2510.27598v2",
+    "source": "ArXiv",
+    "venue": "cs.AI",
+    "comment": null,
+    "conference": null,
+    "tags": [
+      "Natural Language Processing"
+    ]
+  },
+  {
+    "id": "2510.27181v2",
+    "title": "Dual-level Progressive Hardness-Aware Reweighting for Cross-View Geo-Localization",
+    "authors": [
+      "Guozheng Zheng",
+      "Jian Guan",
+      "Mingjie Xie",
+      "Xuanjia Zhao",
+      "Congyi Fan",
+      "Shiheng Zhang",
+      "Pengming Feng"
+    ],
+    "abstract": "Cross-view geo-localization (CVGL) between drone and satellite imagery\nremains challenging due to severe viewpoint gaps and the presence of hard\nnegatives, which are visually similar but geographically mismatched samples.\nExisting mining or reweighting strategies often use static weighting, which is\nsensitive to distribution shifts and prone to overemphasizing difficult samples\ntoo early, leading to noisy gradients and unstable convergence. In this paper,\nwe present a Dual-level Progressive Hardness-aware Reweighting (DPHR) strategy.\nAt the sample level, a Ratio-based Difficulty-Aware (RDA) module evaluates\nrelative difficulty and assigns fine-grained weights to negatives. At the batch\nlevel, a Progressive Adaptive Loss Weighting (PALW) mechanism exploits a\ntraining-progress signal to attenuate noisy gradients during early optimization\nand progressively enhance hard-negative mining as training matures. Experiments\non the University-1652 and SUES-200 benchmarks demonstrate the effectiveness\nand robustness of the proposed DPHR, achieving consistent improvements over\nstate-of-the-art methods.",
+    "published": "2025-10-31",
+    "updated": "2025-11-03",
+    "categories": [
+      "cs.CV",
+      "cs.AI"
+    ],
+    "primary_category": "cs.CV",
+    "pdf_url": "http://arxiv.org/pdf/2510.27181v2",
+    "arxiv_url": "http://arxiv.org/abs/2510.27181v2",
+    "source": "ArXiv",
+    "venue": "cs.AI",
+    "comment": "5 pages, 3 figures",
+    "conference": null,
+    "tags": [
+      "Machine Learning"
+    ]
+  },
+  {
+    "id": "2510.27584v2",
+    "title": "Image Hashing via Cross-View Code Alignment in the Age of Foundation Models",
+    "authors": [
+      "Ilyass Moummad",
+      "Kawtar Zaher",
+      "Hervé Goëau",
+      "Alexis Joly"
+    ],
+    "abstract": "Efficient large-scale retrieval requires representations that are both\ncompact and discriminative. Foundation models provide powerful visual and\nmultimodal embeddings, but nearest neighbor search in these high-dimensional\nspaces is computationally expensive. Hashing offers an efficient alternative by\nenabling fast Hamming distance search with binary codes, yet existing\napproaches often rely on complex pipelines, multi-term objectives, designs\nspecialized for a single learning paradigm, and long training times. We\nintroduce CroVCA (Cross-View Code Alignment), a simple and unified principle\nfor learning binary codes that remain consistent across semantically aligned\nviews. A single binary cross-entropy loss enforces alignment, while coding-rate\nmaximization serves as an anti-collapse regularizer to promote balanced and\ndiverse codes. To implement this, we design HashCoder, a lightweight MLP\nhashing network with a final batch normalization layer to enforce balanced\ncodes. HashCoder can be used as a probing head on frozen embeddings or to adapt\nencoders efficiently via LoRA fine-tuning. Across benchmarks, CroVCA achieves\nstate-of-the-art results in just 5 training epochs. At 16 bits, it particularly\nwell-for instance, unsupervised hashing on COCO completes in under 2 minutes\nand supervised hashing on ImageNet100 in about 3 minutes on a single GPU. These\nresults highlight CroVCA's efficiency, adaptability, and broad applicability.",
+    "published": "2025-10-31",
+    "updated": "2025-11-03",
+    "categories": [
+      "cs.CV",
+      "cs.IR",
+      "cs.LG"
+    ],
+    "primary_category": "cs.CV",
+    "pdf_url": "http://arxiv.org/pdf/2510.27584v2",
+    "arxiv_url": "http://arxiv.org/abs/2510.27584v2",
+    "source": "ArXiv",
+    "venue": "cs.CV",
+    "comment": null,
+    "conference": null,
+    "tags": [
+      "Multimodal"
+    ]
+  },
+  {
+    "id": "2510.27255v2",
+    "title": "Enhancing Spatio-Temporal Zero-shot Action Recognition with Language-driven Description Attributes",
+    "authors": [
+      "Yehna Kim",
+      "Young-Eun Kim",
+      "Seong-Whan Lee"
+    ],
+    "abstract": "Vision-Language Models (VLMs) have demonstrated impressive capabilities in\nzero-shot action recognition by learning to associate video embeddings with\nclass embeddings. However, a significant challenge arises when relying solely\non action classes to provide semantic context, particularly due to the presence\nof multi-semantic words, which can introduce ambiguity in understanding the\nintended concepts of actions. To address this issue, we propose an innovative\napproach that harnesses web-crawled descriptions, leveraging a large-language\nmodel to extract relevant keywords. This method reduces the need for human\nannotators and eliminates the laborious manual process of attribute data\ncreation. Additionally, we introduce a spatio-temporal interaction module\ndesigned to focus on objects and action units, facilitating alignment between\ndescription attributes and video content. In our zero-shot experiments, our\nmodel achieves impressive results, attaining accuracies of 81.0%, 53.1%, and\n68.9% on UCF-101, HMDB-51, and Kinetics-600, respectively, underscoring the\nmodel's adaptability and effectiveness across various downstream tasks.",
+    "published": "2025-10-31",
+    "updated": "2025-11-03",
+    "categories": [
+      "cs.CV"
+    ],
+    "primary_category": "cs.CV",
+    "pdf_url": "http://arxiv.org/pdf/2510.27255v2",
+    "arxiv_url": "http://arxiv.org/abs/2510.27255v2",
+    "source": "ArXiv",
+    "venue": "cs.CV",
+    "comment": null,
+    "conference": null,
+    "tags": [
+      "Multimodal",
+      "Natural Language Processing"
+    ]
+  },
+  {
+    "id": "2510.27181v2",
+    "title": "Dual-level Progressive Hardness-Aware Reweighting for Cross-View Geo-Localization",
+    "authors": [
+      "Guozheng Zheng",
+      "Jian Guan",
+      "Mingjie Xie",
+      "Xuanjia Zhao",
+      "Congyi Fan",
+      "Shiheng Zhang",
+      "Pengming Feng"
+    ],
+    "abstract": "Cross-view geo-localization (CVGL) between drone and satellite imagery\nremains challenging due to severe viewpoint gaps and the presence of hard\nnegatives, which are visually similar but geographically mismatched samples.\nExisting mining or reweighting strategies often use static weighting, which is\nsensitive to distribution shifts and prone to overemphasizing difficult samples\ntoo early, leading to noisy gradients and unstable convergence. In this paper,\nwe present a Dual-level Progressive Hardness-aware Reweighting (DPHR) strategy.\nAt the sample level, a Ratio-based Difficulty-Aware (RDA) module evaluates\nrelative difficulty and assigns fine-grained weights to negatives. At the batch\nlevel, a Progressive Adaptive Loss Weighting (PALW) mechanism exploits a\ntraining-progress signal to attenuate noisy gradients during early optimization\nand progressively enhance hard-negative mining as training matures. Experiments\non the University-1652 and SUES-200 benchmarks demonstrate the effectiveness\nand robustness of the proposed DPHR, achieving consistent improvements over\nstate-of-the-art methods.",
+    "published": "2025-10-31",
+    "updated": "2025-11-03",
+    "categories": [
+      "cs.CV",
+      "cs.AI"
+    ],
+    "primary_category": "cs.CV",
+    "pdf_url": "http://arxiv.org/pdf/2510.27181v2",
+    "arxiv_url": "http://arxiv.org/abs/2510.27181v2",
+    "source": "ArXiv",
+    "venue": "cs.CV",
+    "comment": "5 pages, 3 figures",
+    "conference": null,
+    "tags": [
+      "Machine Learning"
+    ]
+  },
+  {
+    "id": "2510.27584v2",
+    "title": "Image Hashing via Cross-View Code Alignment in the Age of Foundation Models",
+    "authors": [
+      "Ilyass Moummad",
+      "Kawtar Zaher",
+      "Hervé Goëau",
+      "Alexis Joly"
+    ],
+    "abstract": "Efficient large-scale retrieval requires representations that are both\ncompact and discriminative. Foundation models provide powerful visual and\nmultimodal embeddings, but nearest neighbor search in these high-dimensional\nspaces is computationally expensive. Hashing offers an efficient alternative by\nenabling fast Hamming distance search with binary codes, yet existing\napproaches often rely on complex pipelines, multi-term objectives, designs\nspecialized for a single learning paradigm, and long training times. We\nintroduce CroVCA (Cross-View Code Alignment), a simple and unified principle\nfor learning binary codes that remain consistent across semantically aligned\nviews. A single binary cross-entropy loss enforces alignment, while coding-rate\nmaximization serves as an anti-collapse regularizer to promote balanced and\ndiverse codes. To implement this, we design HashCoder, a lightweight MLP\nhashing network with a final batch normalization layer to enforce balanced\ncodes. HashCoder can be used as a probing head on frozen embeddings or to adapt\nencoders efficiently via LoRA fine-tuning. Across benchmarks, CroVCA achieves\nstate-of-the-art results in just 5 training epochs. At 16 bits, it particularly\nwell-for instance, unsupervised hashing on COCO completes in under 2 minutes\nand supervised hashing on ImageNet100 in about 3 minutes on a single GPU. These\nresults highlight CroVCA's efficiency, adaptability, and broad applicability.",
+    "published": "2025-10-31",
+    "updated": "2025-11-03",
+    "categories": [
+      "cs.CV",
+      "cs.IR",
+      "cs.LG"
+    ],
+    "primary_category": "cs.CV",
+    "pdf_url": "http://arxiv.org/pdf/2510.27584v2",
+    "arxiv_url": "http://arxiv.org/abs/2510.27584v2",
+    "source": "ArXiv",
+    "venue": "cs.LG",
+    "comment": null,
+    "conference": null,
+    "tags": [
+      "Multimodal"
+    ]
+  },
+  {
+    "id": "2510.27408v2",
+    "title": "Estimation of aboveground biomass in a tropical dry forest: An intercomparison of airborne, unmanned, and space laser scanning",
+    "authors": [
+      "Nelson Mattié",
+      "Arturo Sanchez-Azofeifa",
+      "Pablo Crespo-Peremarch",
+      "Juan-Ygnacio López-Hernández"
+    ],
+    "abstract": "According to the Paris Climate Change Agreement, all nations are required to\nsubmit reports on their greenhouse gas emissions and absorption every two years\nby 2024. Consequently, forests play a crucial role in reducing carbon\nemissions, which is essential for meeting these obligations. Recognizing the\nsignificance of forest conservation in the global battle against climate\nchange, Article 5 of the Paris Agreement emphasizes the need for high-quality\nforest data. This study focuses on enhancing methods for mapping aboveground\nbiomass in tropical dry forests. Tropical dry forests are considered one of the\nleast understood tropical forest environments; therefore, there is a need for\naccurate approaches to estimate carbon pools. We employ a comparative analysis\nof AGB estimates, utilizing different discrete and full-waveform laser scanning\ndatasets in conjunction with Ordinary Least Squares and Bayesian approaches\nSVM. Airborne Laser Scanning, Unmanned Laser Scanning, and Space Laser Scanning\nwere used as independent variables for extracting forest metrics. Variable\nselection, SVM regression tuning, and cross-validation via a machine-learning\napproach were applied to account for overfitting and underfitting. The results\nindicate that six key variables primarily related to tree height:\nElev\\.minimum, Elev\\.L3, lev\\.MAD.mode, Elev\\.mode, Elev\\.MAD\\.median, and\nElev\\.skewness, are important for AGB estimation using ALSD and ULSD, while\nLeaf Area Index, canopy coverage and height, terrain elevation, and\nfull-waveform signal energy emerged as the most vital variables. AGB values\nestimated from ten permanent tropical dry forest plots in Costa Rica Guanacaste\nprovince ranged from 26.02 Mg/ha to 175.43 Mg/ha. The SVM regressions\ndemonstrated a 17.89 error across all laser scanning systems, with SLSF W\nexhibiting the lowest error 17.07 in estimating total biomass per plot.",
+    "published": "2025-10-31",
+    "updated": "2025-11-03",
+    "categories": [
+      "eess.SP",
+      "cs.LG"
+    ],
+    "primary_category": "eess.SP",
+    "pdf_url": "http://arxiv.org/pdf/2510.27408v2",
+    "arxiv_url": "http://arxiv.org/abs/2510.27408v2",
+    "source": "ArXiv",
+    "venue": "cs.LG",
+    "comment": "32 pages, 17 figures, research paper",
+    "conference": null,
+    "tags": []
+  },
+  {
+    "id": "2510.27584v2",
+    "title": "Image Hashing via Cross-View Code Alignment in the Age of Foundation Models",
+    "authors": [
+      "Ilyass Moummad",
+      "Kawtar Zaher",
+      "Hervé Goëau",
+      "Alexis Joly"
+    ],
+    "abstract": "Efficient large-scale retrieval requires representations that are both\ncompact and discriminative. Foundation models provide powerful visual and\nmultimodal embeddings, but nearest neighbor search in these high-dimensional\nspaces is computationally expensive. Hashing offers an efficient alternative by\nenabling fast Hamming distance search with binary codes, yet existing\napproaches often rely on complex pipelines, multi-term objectives, designs\nspecialized for a single learning paradigm, and long training times. We\nintroduce CroVCA (Cross-View Code Alignment), a simple and unified principle\nfor learning binary codes that remain consistent across semantically aligned\nviews. A single binary cross-entropy loss enforces alignment, while coding-rate\nmaximization serves as an anti-collapse regularizer to promote balanced and\ndiverse codes. To implement this, we design HashCoder, a lightweight MLP\nhashing network with a final batch normalization layer to enforce balanced\ncodes. HashCoder can be used as a probing head on frozen embeddings or to adapt\nencoders efficiently via LoRA fine-tuning. Across benchmarks, CroVCA achieves\nstate-of-the-art results in just 5 training epochs. At 16 bits, it particularly\nwell-for instance, unsupervised hashing on COCO completes in under 2 minutes\nand supervised hashing on ImageNet100 in about 3 minutes on a single GPU. These\nresults highlight CroVCA's efficiency, adaptability, and broad applicability.",
+    "published": "2025-10-31",
+    "updated": "2025-11-03",
+    "categories": [
+      "cs.CV",
+      "cs.IR",
+      "cs.LG"
+    ],
+    "primary_category": "cs.CV",
+    "pdf_url": "http://arxiv.org/pdf/2510.27584v2",
+    "arxiv_url": "http://arxiv.org/abs/2510.27584v2",
+    "source": "ArXiv",
+    "venue": "cs.IR",
+    "comment": null,
+    "conference": null,
+    "tags": [
+      "Multimodal"
+    ]
+  },
+  {
     "id": "2510.27688v1",
     "title": "Continuous Autoregressive Language Models",
     "authors": [
@@ -9260,6 +9566,257 @@
     "conference": null,
     "tags": [
       "Robotics"
+    ]
+  },
+  {
+    "id": "2510.26907v2",
+    "title": "Generative diffusion modeling protocols for improving the Kikuchi pattern indexing in electron back-scatter diffraction",
+    "authors": [
+      "Meghraj Prajapat",
+      "Alankar Alankar"
+    ],
+    "abstract": "Electron back-scatter diffraction (EBSD) has traditionally relied upon\nmethods such as the Hough transform and dictionary Indexing to interpret\ndiffraction patterns and extract crystallographic orientation. However, these\nmethods encounter significant limitations, particularly when operating at high\nscanning speeds, where the exposure time per pattern is decreased beyond the\noperating sensitivity of CCD camera. Hence the signal to noise ratio decreases\nfor the observed pattern which makes the pattern noisy, leading to reduced\nindexing accuracy. This research work aims to develop generative machine\nlearning models for the post-processing or on-the-fly processing of Kikuchi\npatterns which are capable of restoring noisy EBSD patterns obtained at high\nscan speeds. These restored patterns can be used for the determination of\ncrystal orientations to provide reliable indexing results. We compare the\nperformance of such generative models in enhancing the quality of patterns\ncaptured at short exposure times (high scan speeds). An interesting observation\nis that the methodology is not data-hungry as typical machine learning methods.",
+    "published": "2025-10-30",
+    "updated": "2025-11-03",
+    "categories": [
+      "cond-mat.mtrl-sci",
+      "cs.CV"
+    ],
+    "primary_category": "cond-mat.mtrl-sci",
+    "pdf_url": "http://arxiv.org/pdf/2510.26907v2",
+    "arxiv_url": "http://arxiv.org/abs/2510.26907v2",
+    "source": "ArXiv",
+    "venue": "cs.CV",
+    "comment": null,
+    "conference": null,
+    "tags": [
+      "Machine Learning"
+    ]
+  },
+  {
+    "id": "2510.26781v2",
+    "title": "ChartAB: A Benchmark for Chart Grounding & Dense Alignment",
+    "authors": [
+      "Aniruddh Bansal",
+      "Davit Soselia",
+      "Dang Nguyen",
+      "Tianyi Zhou"
+    ],
+    "abstract": "Charts play an important role in visualization, reasoning, data analysis, and\nthe exchange of ideas among humans. However, existing vision-language models\n(VLMs) still lack accurate perception of details and struggle to extract\nfine-grained structures from charts. Such limitations in chart grounding also\nhinder their ability to compare multiple charts and reason over them. In this\npaper, we introduce a novel \"ChartAlign Benchmark (ChartAB)\" to provide a\ncomprehensive evaluation of VLMs in chart grounding tasks, i.e., extracting\ntabular data, localizing visualization elements, and recognizing various\nattributes from charts of diverse types and complexities. We design a JSON\ntemplate to facilitate the calculation of evaluation metrics specifically\ntailored for each grounding task. By incorporating a novel two-stage inference\nworkflow, the benchmark can further evaluate VLMs capability to align and\ncompare elements/attributes across two charts. Our analysis of evaluations on\nseveral recent VLMs reveals new insights into their perception biases,\nweaknesses, robustness, and hallucinations in chart understanding. These\nfindings highlight the fine-grained discrepancies among VLMs in chart\nunderstanding tasks and point to specific skills that need to be strengthened\nin current models.",
+    "published": "2025-10-30",
+    "updated": "2025-11-03",
+    "categories": [
+      "cs.CV"
+    ],
+    "primary_category": "cs.CV",
+    "pdf_url": "http://arxiv.org/pdf/2510.26781v2",
+    "arxiv_url": "http://arxiv.org/abs/2510.26781v2",
+    "source": "ArXiv",
+    "venue": "cs.CV",
+    "comment": null,
+    "conference": null,
+    "tags": [
+      "Multimodal",
+      "Natural Language Processing"
+    ]
+  },
+  {
+    "id": "2510.26692v2",
+    "title": "Kimi Linear: An Expressive, Efficient Attention Architecture",
+    "authors": [
+      "Kimi Team",
+      "Yu Zhang",
+      "Zongyu Lin",
+      "Xingcheng Yao",
+      "Jiaxi Hu",
+      "Fanqing Meng",
+      "Chengyin Liu",
+      "Xin Men",
+      "Songlin Yang",
+      "Zhiyuan Li",
+      "Wentao Li",
+      "Enzhe Lu",
+      "Weizhou Liu",
+      "Yanru Chen",
+      "Weixin Xu",
+      "Longhui Yu",
+      "Yejie Wang",
+      "Yu Fan",
+      "Longguang Zhong",
+      "Enming Yuan",
+      "Dehao Zhang",
+      "Yizhi Zhang",
+      "T. Y. Liu",
+      "Haiming Wang",
+      "Shengjun Fang",
+      "Weiran He",
+      "Shaowei Liu",
+      "Yiwei Li",
+      "Jianlin Su",
+      "Jiezhong Qiu",
+      "Bo Pang",
+      "Junjie Yan",
+      "Zhejun Jiang",
+      "Weixiao Huang",
+      "Bohong Yin",
+      "Jiacheng You",
+      "Chu Wei",
+      "Zhengtao Wang",
+      "Chao Hong",
+      "Yutian Chen",
+      "Guanduo Chen",
+      "Yucheng Wang",
+      "Huabin Zheng",
+      "Feng Wang",
+      "Yibo Liu",
+      "Mengnan Dong",
+      "Zheng Zhang",
+      "Siyuan Pan",
+      "Wenhao Wu",
+      "Yuhao Wu",
+      "Longyu Guan",
+      "Jiawen Tao",
+      "Guohong Fu",
+      "Xinran Xu",
+      "Yuzhi Wang",
+      "Guokun Lai",
+      "Yuxin Wu",
+      "Xinyu Zhou",
+      "Zhilin Yang",
+      "Yulun Du"
+    ],
+    "abstract": "We introduce Kimi Linear, a hybrid linear attention architecture that, for\nthe first time, outperforms full attention under fair comparisons across\nvarious scenarios -- including short-context, long-context, and reinforcement\nlearning (RL) scaling regimes. At its core lies Kimi Delta Attention (KDA), an\nexpressive linear attention module that extends Gated DeltaNet with a\nfiner-grained gating mechanism, enabling more effective use of limited\nfinite-state RNN memory. Our bespoke chunkwise algorithm achieves high hardware\nefficiency through a specialized variant of the Diagonal-Plus-Low-Rank (DPLR)\ntransition matrices, which substantially reduces computation compared to the\ngeneral DPLR formulation while remaining more consistent with the classical\ndelta rule.\n  We pretrain a Kimi Linear model with 3B activated parameters and 48B total\nparameters, based on a layerwise hybrid of KDA and Multi-Head Latent Attention\n(MLA). Our experiments show that with an identical training recipe, Kimi Linear\noutperforms full MLA with a sizeable margin across all evaluated tasks, while\nreducing KV cache usage by up to 75% and achieving up to 6 times decoding\nthroughput for a 1M context. These results demonstrate that Kimi Linear can be\na drop-in replacement for full attention architectures with superior\nperformance and efficiency, including tasks with longer input and output\nlengths.\n  To support further research, we open-source the KDA kernel and vLLM\nimplementations, and release the pre-trained and instruction-tuned model\ncheckpoints.",
+    "published": "2025-10-30",
+    "updated": "2025-11-01",
+    "categories": [
+      "cs.CL",
+      "cs.LG"
+    ],
+    "primary_category": "cs.CL",
+    "pdf_url": "http://arxiv.org/pdf/2510.26692v2",
+    "arxiv_url": "http://arxiv.org/abs/2510.26692v2",
+    "source": "ArXiv",
+    "venue": "cs.CL",
+    "comment": "Kimi Linear tech report",
+    "conference": null,
+    "tags": []
+  },
+  {
+    "id": "2510.26861v2",
+    "title": "Evaluating Perspectival Biases in Cross-Modal Retrieval",
+    "authors": [
+      "Teerapol Saengsukhiran",
+      "Peerawat Chomphooyod",
+      "Narabodee Rodjananant",
+      "Chompakorn Chaksangchaichot",
+      "Patawee Prakrankamanant",
+      "Witthawin Sripheanpol",
+      "Pak Lovichit",
+      "Sarana Nutanong",
+      "Ekapol Chuangsuwanich"
+    ],
+    "abstract": "Multimodal retrieval systems are expected to operate in a semantic space,\nagnostic to the language or cultural origin of the query. In practice, however,\nretrieval outcomes systematically reflect perspectival biases: deviations\nshaped by linguistic prevalence and cultural associations. We study two such\nbiases. First, prevalence bias refers to the tendency to favor entries from\nprevalent languages over semantically faithful entries in image-to-text\nretrieval. Second, association bias refers to the tendency to favor images\nculturally associated with the query over semantically correct ones in\ntext-to-image retrieval. Results show that explicit alignment is a more\neffective strategy for mitigating prevalence bias. However, association bias\nremains a distinct and more challenging problem. These findings suggest that\nachieving truly equitable multimodal systems requires targeted strategies\nbeyond simple data scaling and that bias arising from cultural association may\nbe treated as a more challenging problem than one arising from linguistic\nprevalence.",
+    "published": "2025-10-30",
+    "updated": "2025-11-03",
+    "categories": [
+      "cs.IR",
+      "cs.CL",
+      "H.3.3; I.2.7; I.2.10"
+    ],
+    "primary_category": "cs.IR",
+    "pdf_url": "http://arxiv.org/pdf/2510.26861v2",
+    "arxiv_url": "http://arxiv.org/abs/2510.26861v2",
+    "source": "ArXiv",
+    "venue": "cs.CL",
+    "comment": null,
+    "conference": null,
+    "tags": [
+      "Multimodal"
+    ]
+  },
+  {
+    "id": "2510.26615v2",
+    "title": "SlideAgent: Hierarchical Agentic Framework for Multi-Page Visual Document Understanding",
+    "authors": [
+      "Yiqiao Jin",
+      "Rachneet Kaur",
+      "Zhen Zeng",
+      "Sumitra Ganesh",
+      "Srijan Kumar"
+    ],
+    "abstract": "Multi-page visual documents such as manuals, brochures, presentations, and\nposters convey key information through layout, colors, icons, and cross-slide\nreferences. While large language models (LLMs) offer opportunities in document\nunderstanding, current systems struggle with complex, multi-page visual\ndocuments, particularly in fine-grained reasoning over elements and pages. We\nintroduce SlideAgent, a versatile agentic framework for understanding\nmulti-modal, multi-page, and multi-layout documents, especially slide decks.\nSlideAgent employs specialized agents and decomposes reasoning into three\nspecialized levels-global, page, and element-to construct a structured,\nquery-agnostic representation that captures both overarching themes and\ndetailed visual or textual cues. During inference, SlideAgent selectively\nactivates specialized agents for multi-level reasoning and integrates their\noutputs into coherent, context-aware answers. Extensive experiments show that\nSlideAgent achieves significant improvement over both proprietary (+7.9\noverall) and open-source models (+9.8 overall).",
+    "published": "2025-10-30",
+    "updated": "2025-11-01",
+    "categories": [
+      "cs.CL"
+    ],
+    "primary_category": "cs.CL",
+    "pdf_url": "http://arxiv.org/pdf/2510.26615v2",
+    "arxiv_url": "http://arxiv.org/abs/2510.26615v2",
+    "source": "ArXiv",
+    "venue": "cs.CL",
+    "comment": "https://slideagent.github.io/",
+    "conference": null,
+    "tags": [
+      "Natural Language Processing"
+    ]
+  },
+  {
+    "id": "2510.26521v2",
+    "title": "Hebrew Diacritics Restoration using Visual Representation",
+    "authors": [
+      "Yair Elboher",
+      "Yuval Pinter"
+    ],
+    "abstract": "Diacritics restoration in Hebrew is a fundamental task for ensuring accurate\nword pronunciation and disambiguating textual meaning. Despite the language's\nhigh degree of ambiguity when unvocalized, recent machine learning approaches\nhave significantly advanced performance on this task.\n  In this work, we present DIVRIT, a novel system for Hebrew diacritization\nthat frames the task as a zero-shot classification problem. Our approach\noperates at the word level, selecting the most appropriate diacritization\npattern for each undiacritized word from a dynamically generated candidate set,\nconditioned on the surrounding textual context. A key innovation of DIVRIT is\nits use of a Hebrew Visual Language Model, which processes undiacritized text\nas an image, allowing diacritic information to be embedded directly within the\ninput's vector representation.\n  Through a comprehensive evaluation across various configurations, we\ndemonstrate that the system effectively performs diacritization without relying\non complex, explicit linguistic analysis. Notably, in an ``oracle'' setting\nwhere the correct diacritized form is guaranteed to be among the provided\ncandidates, DIVRIT achieves a high level of accuracy. Furthermore, strategic\narchitectural enhancements and optimized training methodologies yield\nsignificant improvements in the system's overall generalization capabilities.\nThese findings highlight the promising potential of visual representations for\naccurate and automated Hebrew diacritization.",
+    "published": "2025-10-30",
+    "updated": "2025-11-03",
+    "categories": [
+      "cs.CL"
+    ],
+    "primary_category": "cs.CL",
+    "pdf_url": "http://arxiv.org/pdf/2510.26521v2",
+    "arxiv_url": "http://arxiv.org/abs/2510.26521v2",
+    "source": "ArXiv",
+    "venue": "cs.CL",
+    "comment": null,
+    "conference": null,
+    "tags": [
+      "Natural Language Processing",
+      "Machine Learning"
+    ]
+  },
+  {
+    "id": "2510.26861v2",
+    "title": "Evaluating Perspectival Biases in Cross-Modal Retrieval",
+    "authors": [
+      "Teerapol Saengsukhiran",
+      "Peerawat Chomphooyod",
+      "Narabodee Rodjananant",
+      "Chompakorn Chaksangchaichot",
+      "Patawee Prakrankamanant",
+      "Witthawin Sripheanpol",
+      "Pak Lovichit",
+      "Sarana Nutanong",
+      "Ekapol Chuangsuwanich"
+    ],
+    "abstract": "Multimodal retrieval systems are expected to operate in a semantic space,\nagnostic to the language or cultural origin of the query. In practice, however,\nretrieval outcomes systematically reflect perspectival biases: deviations\nshaped by linguistic prevalence and cultural associations. We study two such\nbiases. First, prevalence bias refers to the tendency to favor entries from\nprevalent languages over semantically faithful entries in image-to-text\nretrieval. Second, association bias refers to the tendency to favor images\nculturally associated with the query over semantically correct ones in\ntext-to-image retrieval. Results show that explicit alignment is a more\neffective strategy for mitigating prevalence bias. However, association bias\nremains a distinct and more challenging problem. These findings suggest that\nachieving truly equitable multimodal systems requires targeted strategies\nbeyond simple data scaling and that bias arising from cultural association may\nbe treated as a more challenging problem than one arising from linguistic\nprevalence.",
+    "published": "2025-10-30",
+    "updated": "2025-11-03",
+    "categories": [
+      "cs.IR",
+      "cs.CL",
+      "H.3.3; I.2.7; I.2.10"
+    ],
+    "primary_category": "cs.IR",
+    "pdf_url": "http://arxiv.org/pdf/2510.26861v2",
+    "arxiv_url": "http://arxiv.org/abs/2510.26861v2",
+    "source": "ArXiv",
+    "venue": "cs.IR",
+    "comment": null,
+    "conference": null,
+    "tags": [
+      "Multimodal"
     ]
   },
   {
