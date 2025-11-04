@@ -108,14 +108,14 @@ class PaperFetcher:
         return papers
     
     def extract_venue_from_comment(self, comment: str) -> str:
-        """从 comment 字段提取会议/期刊信息"""
+        """从 comment 字段提取会议/期刊信息，优先返回原始完整描述"""
         if not comment:
             return None
         
         comment = comment.strip()
         
         # 如果是 preprint，返回 None
-        if 'preprint' in comment.lower():
+        if 'preprint' in comment.lower() and 'accepted' not in comment.lower():
             return None
         
         # 常见会议列表
@@ -134,28 +134,54 @@ class PaperFetcher:
             'IEEE', 'ACM', 'Transactions', 'Journal'
         ]
         
-        # 检查是否包含年份信息（如 CVPR 2025）
         import re
         
-        # 匹配模式：会议名 + 年份
+        # 尝试匹配常见模式并提取完整描述
+        # 模式1: "Accepted to/at CVPR 2025" 或 "Published in ICCV 2025"
+        pattern1 = r'(?:accepted?\s+(?:to|at|by|for)|published\s+(?:in|at)|to\s+appear\s+(?:in|at))\s+([^.,;]+?)(?:[.,;]|$)'
+        match = re.search(pattern1, comment, re.IGNORECASE)
+        if match:
+            venue_text = match.group(1).strip()
+            # 清理多余空格和换行符
+            venue_text = ' '.join(venue_text.split())
+            # 限制长度，避免过长
+            if len(venue_text) <= 120:
+                return venue_text
+        
+        # 模式2: 直接以会议名开头，如 "CVPR 2025, Main Conference"
         for conf in conferences:
-            # 匹配 "CVPR 2025" 或 "Accepted to CVPR 2025" 等模式
+            pattern = rf'\b({conf}\s+\d{{4}}(?:\s*[,\-]\s*[\w\s]+)?)'
+            match = re.search(pattern, comment, re.IGNORECASE)
+            if match:
+                venue_text = match.group(1).strip()
+                # 限制长度
+                if ',' in venue_text or '-' in venue_text:
+                    # 只取会议名和年份部分
+                    venue_text = re.match(rf'{conf}\s+\d{{4}}', venue_text, re.IGNORECASE).group(0)
+                return venue_text
+        
+        # 模式3: 只有会议名和年份
+        for conf in conferences:
             pattern = rf'\b{conf}\s*[:\']?\s*(\d{{4}})\b'
             match = re.search(pattern, comment, re.IGNORECASE)
             if match:
                 year = match.group(1)
                 return f"{conf} {year}"
-            
-            # 匹配只有会议名的情况
+        
+        # 模式4: 只有会议名
+        for conf in conferences:
             pattern = rf'\b{conf}\b'
             if re.search(pattern, comment, re.IGNORECASE):
                 return conf
         
-        # 检查期刊
+        # 检查期刊 - 尽量返回完整描述
         for journal in journals:
             if journal.lower() in comment.lower():
-                # 尝试提取完整的期刊名称（取前50个字符）
-                return comment[:50] if len(comment) > 50 else comment
+                # 取第一句或前80个字符
+                first_sentence = comment.split('.')[0].strip()
+                if len(first_sentence) <= 80:
+                    return first_sentence
+                return comment[:80].strip() + '...'
         
         return None
     

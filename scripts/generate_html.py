@@ -864,29 +864,36 @@ document.addEventListener('DOMContentLoaded', function() {
     function getVenueBadge(conference) {
         if (!conference) return null;
         
-        const venueMap = {
-            'NeurIPS': 'badge-neurips',
-            'ICLR': 'badge-iclr',
-            'ICML': 'badge-icml',
-            'CVPR': 'badge-cvpr',
-            'ICCV': 'badge-iccv',
-            'ECCV': 'badge-eccv',
-            'ACL': 'badge-acl',
-            'EMNLP': 'badge-emnlp',
-            'NAACL': 'badge-naacl',
-            'AAAI': 'badge-aaai',
-            'IJCAI': 'badge-ijcai'
-        };
+        // 根据会议名称中包含的关键词决定徽章样式
+        const conferenceUpper = conference.toUpperCase();
+        let badgeClass = 'badge-published';  // 默认样式
         
-        // 使用完整的会议名称
-        let badgeClass = 'badge-published';
-        for (const [key, value] of Object.entries(venueMap)) {
-            if (conference.toUpperCase().includes(key)) {
-                badgeClass = value;
-                break;
-            }
+        // 顶级会议匹配
+        if (conferenceUpper.includes('NEURIPS')) {
+            badgeClass = 'badge-neurips';
+        } else if (conferenceUpper.includes('ICLR')) {
+            badgeClass = 'badge-iclr';
+        } else if (conferenceUpper.includes('ICML')) {
+            badgeClass = 'badge-icml';
+        } else if (conferenceUpper.includes('CVPR')) {
+            badgeClass = 'badge-cvpr';
+        } else if (conferenceUpper.includes('ICCV')) {
+            badgeClass = 'badge-iccv';
+        } else if (conferenceUpper.includes('ECCV')) {
+            badgeClass = 'badge-eccv';
+        } else if (conferenceUpper.includes('ACL')) {
+            badgeClass = 'badge-acl';
+        } else if (conferenceUpper.includes('EMNLP')) {
+            badgeClass = 'badge-emnlp';
+        } else if (conferenceUpper.includes('NAACL')) {
+            badgeClass = 'badge-naacl';
+        } else if (conferenceUpper.includes('AAAI')) {
+            badgeClass = 'badge-aaai';
+        } else if (conferenceUpper.includes('IJCAI')) {
+            badgeClass = 'badge-ijcai';
         }
         
+        // 直接使用从 ArXiv comments 提取的完整会议名称
         return { class: badgeClass, text: conference };
     }
     
