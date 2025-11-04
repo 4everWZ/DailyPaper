@@ -532,7 +532,7 @@
     "source": "ArXiv",
     "venue": "cs.AI",
     "comment": "15 pages, 18 figures, GitHub link:\n  https://github.com/google-deepmind/sketch_to_layout, accept at ICCV 2025\n  Workshop (HiGen)",
-    "conference": null,
+    "conference": "ICCV 2025",
     "tags": [
       "Multimodal",
       "Natural Language Processing"
@@ -1287,7 +1287,7 @@
     "source": "ArXiv",
     "venue": "cs.AI",
     "comment": "Preprint (submitted manuscript). Accepted at the MICCAI 2025 MIRASOL\n  Workshop; to appear in the Springer proceedings volume. This is the\n  pre-review version (not the Version of Record). DOI will be added after\n  publication. [Optional: 8 pages, 4 figures, 4 tables.]",
-    "conference": "MICCAI 2025 MIRASOL Workshop",
+    "conference": null,
     "tags": [
       "Machine Learning",
       "Natural Language Processing"
@@ -1318,7 +1318,7 @@
     "source": "ArXiv",
     "venue": "cs.AI",
     "comment": "Accpeted to NeurIPS 2025. Code is available at\n  https://github.com/admins97/MSC_PRVR",
-    "conference": null,
+    "conference": "NeurIPS 2025",
     "tags": [
       "Multimodal"
     ]
@@ -1374,7 +1374,7 @@
     "source": "ArXiv",
     "venue": "cs.AI",
     "comment": "Medical Imaging Meets EurIPS (NeurIPS-endorsed workshop) - MedEurIPS",
-    "conference": null,
+    "conference": "NeurIPS",
     "tags": [
       "Machine Learning",
       "Robotics"
@@ -1850,7 +1850,7 @@
     "source": "ArXiv",
     "venue": "cs.AI",
     "comment": "Accepted at EMNLP 2025 Main Track",
-    "conference": "EMNLP 2025 Main Track",
+    "conference": "EMNLP 2025",
     "tags": [
       "Robotics"
     ]
@@ -1879,7 +1879,7 @@
     "source": "ArXiv",
     "venue": "cs.AI",
     "comment": "Accepted by International Conference on Bioinformatics and\n  Biomedicine (BIBM 25)",
-    "conference": "International Conference on Bioinformatics and Biomedicine (BIBM 25)",
+    "conference": null,
     "tags": [
       "Machine Learning"
     ]
@@ -2079,7 +2079,7 @@
     "source": "ArXiv",
     "venue": "cs.AI",
     "comment": "Accepted for publication in IEEE Transactions on Neural Systems and\n  Rehabilitation Engineering",
-    "conference": "publication in IEEE Transactions on Neural Systems and Rehabilitation Engineering",
+    "conference": "Accepted for publication in IEEE Transactions on N",
     "tags": []
   },
   {
@@ -2199,7 +2199,7 @@
     "source": "ArXiv",
     "venue": "cs.AI",
     "comment": "NeurIPS 2025",
-    "conference": null,
+    "conference": "NeurIPS 2025",
     "tags": []
   },
   {
@@ -2376,7 +2376,7 @@
     "source": "ArXiv",
     "venue": "cs.AI",
     "comment": "EMNLP 2025",
-    "conference": null,
+    "conference": "EMNLP 2025",
     "tags": [
       "Multimodal",
       "Natural Language Processing"
@@ -2427,7 +2427,7 @@
     "source": "ArXiv",
     "venue": "cs.AI",
     "comment": "8 pages, 3 figures. Submitted to ICRA 2026",
-    "conference": null,
+    "conference": "ICRA 2026",
     "tags": [
       "Machine Learning",
       "Robotics"
@@ -2699,7 +2699,7 @@
     "source": "ArXiv",
     "venue": "cs.AI",
     "comment": "Neurips 2025 poster",
-    "conference": null,
+    "conference": "NeurIPS 2025",
     "tags": [
       "Machine Learning"
     ]
@@ -2783,7 +2783,7 @@
     "source": "ArXiv",
     "venue": "cs.AI",
     "comment": "Accepted at the AAAI Conference on Artificial Intelligence and\n  Interactive Digital Entertainment (AIIDE 2025)",
-    "conference": "AAAI Conference on Artificial Intelligence and Interactive Digital Entertainment (AIIDE 2025)",
+    "conference": "AAAI",
     "tags": [
       "Machine Learning",
       "Multimodal"
@@ -3163,7 +3163,7 @@
     "source": "ArXiv",
     "venue": "cs.CV",
     "comment": "This paper is accepted by the GRSL in 2025",
-    "conference": "GRSL in 2025",
+    "conference": null,
     "tags": [
       "Computer Vision",
       "Machine Learning"
@@ -3255,7 +3255,7 @@
     "source": "ArXiv",
     "venue": "cs.CV",
     "comment": "15 pages, 18 figures, GitHub link:\n  https://github.com/google-deepmind/sketch_to_layout, accept at ICCV 2025\n  Workshop (HiGen)",
-    "conference": null,
+    "conference": "ICCV 2025",
     "tags": [
       "Multimodal",
       "Natural Language Processing"
@@ -3690,7 +3690,7 @@
     "source": "ArXiv",
     "venue": "cs.CV",
     "comment": "Preprint (submitted manuscript). Accepted at the MICCAI 2025 MIRASOL\n  Workshop; to appear in the Springer proceedings volume. This is the\n  pre-review version (not the Version of Record). DOI will be added after\n  publication. [Optional: 8 pages, 4 figures, 4 tables.]",
-    "conference": "MICCAI 2025 MIRASOL Workshop",
+    "conference": null,
     "tags": [
       "Machine Learning",
       "Natural Language Processing"
@@ -3745,7 +3745,7 @@
     "source": "ArXiv",
     "venue": "cs.CV",
     "comment": "Accpeted to NeurIPS 2025. Code is available at\n  https://github.com/admins97/MSC_PRVR",
-    "conference": null,
+    "conference": "NeurIPS 2025",
     "tags": [
       "Multimodal"
     ]
@@ -3771,7 +3771,7 @@
     "source": "ArXiv",
     "venue": "cs.CV",
     "comment": "Medical Imaging Meets EurIPS (NeurIPS-endorsed workshop) - MedEurIPS",
-    "conference": null,
+    "conference": "NeurIPS",
     "tags": [
       "Machine Learning",
       "Robotics"
@@ -4508,7 +4508,7 @@
     "source": "ArXiv",
     "venue": "cs.CV",
     "comment": "NeurIPS 2025",
-    "conference": null,
+    "conference": "NeurIPS 2025",
     "tags": []
   },
   {
@@ -4743,7 +4743,7 @@
     "source": "ArXiv",
     "venue": "cs.CV",
     "comment": "16 pages, 29 figures. Accepted at 26th Privacy Enhancing Technologies\n  Symposium (PETS 2026)",
-    "conference": "26th Privacy Enhancing Technologies Symposium (PETS 2026)",
+    "conference": null,
     "tags": [
       "Multimodal"
     ]
@@ -5017,7 +5017,7 @@
     "source": "ArXiv",
     "venue": "cs.CV",
     "comment": "This paper has been accepted by MMM 2026",
-    "conference": "MMM 2026",
+    "conference": null,
     "tags": [
       "Robotics"
     ]
@@ -5127,7 +5127,7 @@
     "source": "ArXiv",
     "venue": "cs.CL",
     "comment": "EMNLP 2025",
-    "conference": null,
+    "conference": "EMNLP 2025",
     "tags": [
       "Natural Language Processing"
     ]
@@ -5153,7 +5153,7 @@
     "source": "ArXiv",
     "venue": "cs.CL",
     "comment": "Accepted to NeurIPS 2025 Workshop on Structured Probabilistic\n  Inference & Generative Modeling",
-    "conference": "NeurIPS 2025 Workshop on Structured Probabilistic Inference & Generative Modeling",
+    "conference": "NeurIPS 2025",
     "tags": [
       "Natural Language Processing"
     ]
@@ -5431,7 +5431,7 @@
     "source": "ArXiv",
     "venue": "cs.CL",
     "comment": "Accepted to EMNLP Findings",
-    "conference": "EMNLP Findings",
+    "conference": "EMNLP",
     "tags": []
   },
   {
@@ -5457,7 +5457,7 @@
     "source": "ArXiv",
     "venue": "cs.CL",
     "comment": "Accepted at the IEEE International Conference on Data Mining (ICDM)\n  2025, Washington, DC, USA",
-    "conference": "IEEE International Conference on Data Mining (ICDM) 2025",
+    "conference": "Accepted at the IEEE International Conference on D",
     "tags": [
       "Natural Language Processing"
     ]
@@ -5699,7 +5699,7 @@
     "source": "ArXiv",
     "venue": "cs.CL",
     "comment": "Accepted to the International Conference on Information and\n  Communication Technologies for Amazigh (TICAM 25)",
-    "conference": "International Conference on Information and Communication Technologies for Amazigh (TICAM 25)",
+    "conference": null,
     "tags": []
   },
   {
@@ -5803,7 +5803,7 @@
     "source": "ArXiv",
     "venue": "cs.CL",
     "comment": "EMNLP2025 main conference",
-    "conference": null,
+    "conference": "EMNLP 2025",
     "tags": [
       "Natural Language Processing"
     ]
@@ -6111,7 +6111,7 @@
     "source": "ArXiv",
     "venue": "cs.CL",
     "comment": "EMNLP 2025",
-    "conference": null,
+    "conference": "EMNLP 2025",
     "tags": [
       "Multimodal",
       "Natural Language Processing"
@@ -6652,7 +6652,7 @@
     "source": "ArXiv",
     "venue": "cs.LG",
     "comment": "Accepted to NeurIPS 2025 Workshop on Structured Probabilistic\n  Inference & Generative Modeling",
-    "conference": "NeurIPS 2025 Workshop on Structured Probabilistic Inference & Generative Modeling",
+    "conference": "NeurIPS 2025",
     "tags": [
       "Natural Language Processing"
     ]
@@ -7051,7 +7051,7 @@
     "source": "ArXiv",
     "venue": "cs.LG",
     "comment": "NeurIPS 2025, poster",
-    "conference": null,
+    "conference": "NeurIPS 2025",
     "tags": [
       "Machine Learning"
     ]
@@ -7079,7 +7079,7 @@
     "source": "ArXiv",
     "venue": "cs.LG",
     "comment": "Accepted at the IEEE International Conference on Data Mining (ICDM)\n  2025, Washington, DC, USA",
-    "conference": "IEEE International Conference on Data Mining (ICDM) 2025",
+    "conference": "Accepted at the IEEE International Conference on D",
     "tags": [
       "Natural Language Processing"
     ]
@@ -7167,7 +7167,7 @@
     "source": "ArXiv",
     "venue": "cs.LG",
     "comment": "11 pages, 10 figures, under review at IEEE Transactions on Signal\n  Processing",
-    "conference": null,
+    "conference": "11 pages, 10 figures, under review at IEEE Transac",
     "tags": [
       "Machine Learning"
     ]
@@ -7356,7 +7356,7 @@
     "source": "ArXiv",
     "venue": "cs.LG",
     "comment": "Accepted for 2025 ACM SIGSPATIAL conference",
-    "conference": "2025 ACM SIGSPATIAL conference",
+    "conference": "Accepted for 2025 ACM SIGSPATIAL conference",
     "tags": [
       "Multimodal"
     ]
@@ -7750,7 +7750,7 @@
     "source": "ArXiv",
     "venue": "cs.LG",
     "comment": "ArXiv version of the IEEE JBHI paper\n  (https://ieeexplore.ieee.org/abstract/document/11193709)",
-    "conference": null,
+    "conference": "ArXiv version of the IEEE JBHI paper\n  (https://ie",
     "tags": [
       "Machine Learning"
     ]
@@ -7778,7 +7778,7 @@
     "source": "ArXiv",
     "venue": "cs.LG",
     "comment": "Accepted at EMNLP 2025 Main Track",
-    "conference": "EMNLP 2025 Main Track",
+    "conference": "EMNLP 2025",
     "tags": [
       "Robotics"
     ]
@@ -7807,7 +7807,7 @@
     "source": "ArXiv",
     "venue": "cs.LG",
     "comment": "Accepted by International Conference on Bioinformatics and\n  Biomedicine (BIBM 25)",
-    "conference": "International Conference on Bioinformatics and Biomedicine (BIBM 25)",
+    "conference": null,
     "tags": [
       "Machine Learning"
     ]
@@ -7868,7 +7868,7 @@
     "source": "ArXiv",
     "venue": "cs.LG",
     "comment": "Accepted to MediKS@CIKM2025",
-    "conference": "MediKS@CIKM2025",
+    "conference": null,
     "tags": [
       "Machine Learning"
     ]
@@ -8124,7 +8124,7 @@
     "source": "ArXiv",
     "venue": "cs.LG",
     "comment": "NeurIPS 2025",
-    "conference": null,
+    "conference": "NeurIPS 2025",
     "tags": []
   },
   {
@@ -8373,7 +8373,7 @@
     "source": "ArXiv",
     "venue": "cs.LG",
     "comment": "Neurips 2025 poster",
-    "conference": null,
+    "conference": "NeurIPS 2025",
     "tags": [
       "Machine Learning"
     ]
@@ -8401,7 +8401,7 @@
     "source": "ArXiv",
     "venue": "cs.LG",
     "comment": "Accepted for publication in IAU Symposium 397: Exploring the Universe\n  with Artificial Intelligence (UniversAI 2025), Cambridge University Press.\n  Editors: C. Sterken, J. Hearnshaw & D. Valls-Gabaud",
-    "conference": "publication in IAU Symposium 397: Exploring the Universe with Artificial Intelligence (UniversAI 2025)",
+    "conference": null,
     "tags": [
       "Machine Learning",
       "Robotics"
@@ -8456,7 +8456,7 @@
     "source": "ArXiv",
     "venue": "cs.LG",
     "comment": "ACM CIKM 2025",
-    "conference": null,
+    "conference": "ACM CIKM 2025",
     "tags": [
       "Machine Learning"
     ]
@@ -8695,7 +8695,7 @@
     "source": "ArXiv",
     "venue": "cs.LG",
     "comment": "Submitted to ICLR 2026",
-    "conference": null,
+    "conference": "ICLR 2026",
     "tags": [
       "Natural Language Processing"
     ]
@@ -8954,7 +8954,7 @@
     "source": "ArXiv",
     "venue": "cs.IR",
     "comment": "Accepted to MediKS@CIKM2025",
-    "conference": "MediKS@CIKM2025",
+    "conference": null,
     "tags": [
       "Machine Learning"
     ]
@@ -9414,7 +9414,7 @@
     "source": "ArXiv",
     "venue": "cs.RO",
     "comment": "8 pages, 3 figures. Submitted to ICRA 2026",
-    "conference": null,
+    "conference": "ICRA 2026",
     "tags": [
       "Machine Learning",
       "Robotics"
@@ -9446,7 +9446,7 @@
     "source": "ArXiv",
     "venue": "cs.RO",
     "comment": "Submitted to ICRA 2026",
-    "conference": null,
+    "conference": "ICRA 2026",
     "tags": [
       "Robotics"
     ]
@@ -9475,7 +9475,7 @@
     "source": "ArXiv",
     "venue": "cs.RO",
     "comment": "ICRA2026 submited",
-    "conference": null,
+    "conference": "ICRA 2026",
     "tags": [
       "Computer Vision",
       "Robotics"
@@ -9531,7 +9531,7 @@
     "source": "ArXiv",
     "venue": "cs.RO",
     "comment": "This paper has been accepted by MMM 2026",
-    "conference": "MMM 2026",
+    "conference": null,
     "tags": [
       "Robotics"
     ]
@@ -10016,7 +10016,7 @@
     "source": "ArXiv",
     "venue": "cs.AI",
     "comment": "8 pages, NeurIPS 2025",
-    "conference": null,
+    "conference": "NeurIPS 2025",
     "tags": [
       "Natural Language Processing"
     ]
@@ -10123,7 +10123,7 @@
     "source": "ArXiv",
     "venue": "cs.CV",
     "comment": "Submitted to IEEE Transactions on Intelligent Transportation Systems\n  (IEEE T-ITS)",
-    "conference": null,
+    "conference": "Submitted to IEEE Transactions on Intelligent Tran",
     "tags": [
       "Machine Learning",
       "Natural Language Processing",
@@ -10295,7 +10295,7 @@
     "source": "ArXiv",
     "venue": "cs.CV",
     "comment": "Accepted to International AAAI Conference on Web and Social Media\n  2026 (ICWSM'26)",
-    "conference": "International AAAI Conference on Web and Social Media 2026 (ICWSM'26)",
+    "conference": "AAAI",
     "tags": [
       "Computer Vision",
       "Robotics"
@@ -10323,7 +10323,7 @@
     "source": "ArXiv",
     "venue": "cs.CV",
     "comment": "17 pages, 10 figures, 8 tables, submitted to \"Medical Image Analysis\"\n  journal",
-    "conference": null,
+    "conference": "17 pages, 10 figures, 8 tables, submitted to \"Medi",
     "tags": [
       "Machine Learning",
       "Natural Language Processing"
@@ -10377,7 +10377,7 @@
     "source": "ArXiv",
     "venue": "cs.CV",
     "comment": "Accepted to NeurIPS 2025 / Project page:\n  https://github.com/cgskku/dc4gs",
-    "conference": "NeurIPS 2025 / Project page:",
+    "conference": "NeurIPS 2025",
     "tags": [
       "Robotics"
     ]
@@ -10701,7 +10701,7 @@
     "source": "ArXiv",
     "venue": "cs.CL",
     "comment": "Accepted to IEEE Big Data 2025",
-    "conference": "IEEE Big Data 2025",
+    "conference": "Accepted to IEEE Big Data 2025",
     "tags": [
       "Machine Learning",
       "Natural Language Processing"
@@ -11011,7 +11011,7 @@
     "source": "ArXiv",
     "venue": "cs.CL",
     "comment": "Accepted to the 8th BlackboxNLP Workshop at EMNLP 2025",
-    "conference": "8th BlackboxNLP Workshop at EMNLP 2025",
+    "conference": "EMNLP 2025",
     "tags": [
       "Natural Language Processing"
     ]
@@ -11355,7 +11355,7 @@
     "source": "ArXiv",
     "venue": "cs.LG",
     "comment": "IEEE PICom 2025",
-    "conference": null,
+    "conference": "IEEE PICom 2025",
     "tags": [
       "Machine Learning",
       "Natural Language Processing"
@@ -11382,7 +11382,7 @@
     "source": "ArXiv",
     "venue": "cs.LG",
     "comment": "8 pages, NeurIPS 2025",
-    "conference": null,
+    "conference": "NeurIPS 2025",
     "tags": [
       "Natural Language Processing"
     ]
@@ -11654,7 +11654,7 @@
     "source": "ArXiv",
     "venue": "cs.RO",
     "comment": "9 pages, 6 figures, under review at IEEE conference",
-    "conference": null,
+    "conference": "9 pages, 6 figures, under review at IEEE conferenc",
     "tags": [
       "Multimodal",
       "Natural Language Processing",
@@ -11684,7 +11684,7 @@
     "source": "ArXiv",
     "venue": "cs.RO",
     "comment": "7 pages, 7 figures, to be published in MRS 2025",
-    "conference": "MRS 2025",
+    "conference": null,
     "tags": []
   },
   {
@@ -12268,7 +12268,7 @@
     "source": "ArXiv",
     "venue": "cs.AI",
     "comment": "Accepted to the 8th BlackboxNLP Workshop at EMNLP 2025",
-    "conference": "8th BlackboxNLP Workshop at EMNLP 2025",
+    "conference": "EMNLP 2025",
     "tags": [
       "Natural Language Processing"
     ]
@@ -12506,7 +12506,7 @@
     "source": "ArXiv",
     "venue": "cs.AI",
     "comment": "NeurIPS 2025 (Spotlight)",
-    "conference": null,
+    "conference": "NeurIPS 2025",
     "tags": [
       "Natural Language Processing"
     ]
@@ -12756,7 +12756,7 @@
     "source": "ArXiv",
     "venue": "cs.AI",
     "comment": "Accepted by ICSE 2026. Code and data:\n  https://github.com/SIMIAO515/SecureReviewer",
-    "conference": "ICSE 2026",
+    "conference": null,
     "tags": [
       "Natural Language Processing"
     ]
@@ -13267,7 +13267,7 @@
     "source": "ArXiv",
     "venue": "cs.AI",
     "comment": "11 pages, 6 figures. Includes supplementary material. Under review as\n  a conference paper at ICLR 2026",
-    "conference": null,
+    "conference": "ICLR 2026",
     "tags": [
       "Robotics",
       "Multimodal"
@@ -13326,7 +13326,7 @@
     "source": "ArXiv",
     "venue": "cs.AI",
     "comment": "NeurIPS 2025",
-    "conference": null,
+    "conference": "NeurIPS 2025",
     "tags": []
   },
   {
@@ -13584,7 +13584,7 @@
     "source": "ArXiv",
     "venue": "cs.AI",
     "comment": "NeurIPS 2025 (Spotlight)",
-    "conference": null,
+    "conference": "NeurIPS 2025",
     "tags": [
       "Natural Language Processing",
       "Robotics"
@@ -13807,7 +13807,7 @@
     "source": "ArXiv",
     "venue": "cs.AI",
     "comment": "Accepted in NeurIPS 2025",
-    "conference": null,
+    "conference": "NeurIPS 2025",
     "tags": [
       "Natural Language Processing",
       "Robotics"
@@ -13859,7 +13859,7 @@
     "source": "ArXiv",
     "venue": "cs.AI",
     "comment": "Published in the Thirty-Ninth Conference on Neural Information\n  Processing Systems (NeurIPS 2025)",
-    "conference": "Thirty-Ninth Conference on Neural Information Processing Systems (NeurIPS 2025)",
+    "conference": "NeurIPS 2025",
     "tags": [
       "Machine Learning"
     ]
@@ -13972,7 +13972,7 @@
     "source": "ArXiv",
     "venue": "cs.AI",
     "comment": "6th ACM International Conference on AI in Finance, November 15-18,\n  2025, Singapore",
-    "conference": null,
+    "conference": "6th ACM International Conference on AI in Finance,",
     "tags": [
       "Machine Learning"
     ]
@@ -14000,7 +14000,7 @@
     "source": "ArXiv",
     "venue": "cs.AI",
     "comment": "This paper is currently under review for presentation at the IEEE\n  SAMI 2026 Conference",
-    "conference": null,
+    "conference": "This paper is currently under review for presentat",
     "tags": []
   },
   {
@@ -14024,7 +14024,7 @@
     "source": "ArXiv",
     "venue": "cs.AI",
     "comment": "EMNLP 2025 (main)",
-    "conference": null,
+    "conference": "EMNLP 2025",
     "tags": [
       "Machine Learning"
     ]
@@ -14051,7 +14051,7 @@
     "source": "ArXiv",
     "venue": "cs.AI",
     "comment": "Accepted to Computer Vision for Automated Medical Diagnosis (CVAMD)\n  Workshop at ICCV 2025",
-    "conference": "Computer Vision for Automated Medical Diagnosis (CVAMD) Workshop at ICCV 2025",
+    "conference": "ICCV 2025",
     "tags": [
       "Natural Language Processing",
       "Multimodal"
@@ -14187,7 +14187,7 @@
     "source": "ArXiv",
     "venue": "cs.AI",
     "comment": "Pre-print prepared for journal submission",
-    "conference": null,
+    "conference": "Pre-print prepared for journal submission",
     "tags": [
       "Natural Language Processing"
     ]
@@ -14394,7 +14394,7 @@
     "source": "ArXiv",
     "venue": "cs.AI",
     "comment": "29 pages, 12 figures. Fazel Arasteh and Arian Haghparast contributed\n  equally to this research. Submitted to ACM Transactions on Spatial Algorithms\n  and Systems (TSAS). The code for this work is publicly available at\n  https://github.com/Arianhgh/HHAN",
-    "conference": null,
+    "conference": "29 pages, 12 figures. Fazel Arasteh and Arian Hagh",
     "tags": [
       "Robotics",
       "Machine Learning"
@@ -14452,7 +14452,7 @@
     "source": "ArXiv",
     "venue": "cs.CV",
     "comment": "EMNLP 2025 (Findings). Project page:\n  https://cfeng16.github.io/mdlm4vfl/",
-    "conference": null,
+    "conference": "EMNLP 2025",
     "tags": [
       "Natural Language Processing"
     ]
@@ -14516,7 +14516,7 @@
     "source": "ArXiv",
     "venue": "cs.CV",
     "comment": "NeurIPS 2025",
-    "conference": null,
+    "conference": "NeurIPS 2025",
     "tags": []
   },
   {
@@ -14695,7 +14695,7 @@
     "source": "ArXiv",
     "venue": "cs.CV",
     "comment": "Accepted to ACMMM 2025",
-    "conference": "ACMMM 2025",
+    "conference": "Accepted to ACMMM 2025",
     "tags": [
       "Machine Learning"
     ]
@@ -14750,7 +14750,7 @@
     "source": "ArXiv",
     "venue": "cs.CV",
     "comment": "Article written for Frontiers of Science Award, International\n  Congress on Basic Science, 2025",
-    "conference": null,
+    "conference": "Article written for Frontiers of Science Award, In",
     "tags": []
   },
   {
@@ -15154,7 +15154,7 @@
     "source": "ArXiv",
     "venue": "cs.CV",
     "comment": "6 pages, 2025 IEEE International Workshop on Metrology for\n  Agriculture and Forestry (MetroAgriFor)",
-    "conference": null,
+    "conference": "6 pages, 2025 IEEE International Workshop on Metro",
     "tags": [
       "Machine Learning"
     ]
@@ -15186,7 +15186,7 @@
     "source": "ArXiv",
     "venue": "cs.CV",
     "comment": "Accepted at 32nd International Conference on MultiMedia Modeling",
-    "conference": "32nd International Conference on MultiMedia Modeling",
+    "conference": null,
     "tags": [
       "Multimodal"
     ]
@@ -15217,7 +15217,7 @@
     "source": "ArXiv",
     "venue": "cs.CV",
     "comment": "Accepted by Computerized Medical Imaging and Graphics (CMIG)",
-    "conference": "Computerized Medical Imaging and Graphics (CMIG)",
+    "conference": null,
     "tags": [
       "Natural Language Processing"
     ]
@@ -15498,7 +15498,7 @@
     "source": "ArXiv",
     "venue": "cs.CV",
     "comment": "7 pages, 3 figures, accepted to IPIN 2025",
-    "conference": "IPIN 2025",
+    "conference": null,
     "tags": []
   },
   {
@@ -15554,7 +15554,7 @@
     "source": "ArXiv",
     "venue": "cs.CV",
     "comment": "11 pages, 6 figures. Includes supplementary material. Under review as\n  a conference paper at ICLR 2026",
-    "conference": null,
+    "conference": "ICLR 2026",
     "tags": [
       "Robotics",
       "Multimodal"
@@ -15609,7 +15609,7 @@
     "source": "ArXiv",
     "venue": "cs.CV",
     "comment": "Published at IWAIPR 2025 conference",
-    "conference": "IWAIPR 2025 conference",
+    "conference": null,
     "tags": []
   },
   {
@@ -15661,7 +15661,7 @@
     "source": "ArXiv",
     "venue": "cs.CV",
     "comment": "Published at IWAIPR 2025 conference",
-    "conference": "IWAIPR 2025 conference",
+    "conference": null,
     "tags": [
       "Robotics",
       "Machine Learning"
@@ -15720,7 +15720,7 @@
     "source": "ArXiv",
     "venue": "cs.CV",
     "comment": "Accepted at BIOSIG 2025 conference",
-    "conference": "BIOSIG 2025 conference",
+    "conference": null,
     "tags": []
   },
   {
@@ -15748,7 +15748,7 @@
     "source": "ArXiv",
     "venue": "cs.CV",
     "comment": "NeurIPS 2025 spotlight",
-    "conference": null,
+    "conference": "NeurIPS 2025",
     "tags": []
   },
   {
@@ -15858,7 +15858,7 @@
     "source": "ArXiv",
     "venue": "cs.CV",
     "comment": "SIGGRAPH Asia 2025",
-    "conference": null,
+    "conference": "SIGGRAPH",
     "tags": [
       "Computer Vision",
       "Machine Learning"
@@ -15886,7 +15886,7 @@
     "source": "ArXiv",
     "venue": "cs.CV",
     "comment": "Published in the Thirty-Ninth Conference on Neural Information\n  Processing Systems (NeurIPS 2025)",
-    "conference": "Thirty-Ninth Conference on Neural Information Processing Systems (NeurIPS 2025)",
+    "conference": "NeurIPS 2025",
     "tags": [
       "Machine Learning"
     ]
@@ -16060,7 +16060,7 @@
     "source": "ArXiv",
     "venue": "cs.CV",
     "comment": "Accepted to Computer Vision for Automated Medical Diagnosis (CVAMD)\n  Workshop at ICCV 2025",
-    "conference": "Computer Vision for Automated Medical Diagnosis (CVAMD) Workshop at ICCV 2025",
+    "conference": "ICCV 2025",
     "tags": [
       "Natural Language Processing",
       "Multimodal"
@@ -16362,7 +16362,7 @@
     "source": "ArXiv",
     "venue": "cs.CV",
     "comment": "39th Conference on Neural Information Processing Systems (NeurIPS\n  2025) Workshop: The First Workshop on Generative and Protective AI for\n  Content Creation",
-    "conference": null,
+    "conference": "NeurIPS 2025",
     "tags": [
       "Natural Language Processing",
       "Multimodal"
@@ -16767,7 +16767,7 @@
     "source": "ArXiv",
     "venue": "cs.CL",
     "comment": "Accepted to the 8th BlackboxNLP Workshop at EMNLP 2025",
-    "conference": "8th BlackboxNLP Workshop at EMNLP 2025",
+    "conference": "EMNLP 2025",
     "tags": [
       "Natural Language Processing"
     ]
@@ -16852,7 +16852,7 @@
     "source": "ArXiv",
     "venue": "cs.CL",
     "comment": "NeurIPS 2025 (Spotlight)",
-    "conference": null,
+    "conference": "NeurIPS 2025",
     "tags": [
       "Natural Language Processing"
     ]
@@ -17086,7 +17086,7 @@
     "source": "ArXiv",
     "venue": "cs.CL",
     "comment": "Accepted by ICSE 2026. Code and data:\n  https://github.com/SIMIAO515/SecureReviewer",
-    "conference": "ICSE 2026",
+    "conference": null,
     "tags": [
       "Natural Language Processing"
     ]
@@ -17115,7 +17115,7 @@
     "source": "ArXiv",
     "venue": "cs.CL",
     "comment": "15 pages, 6 figures, EMNLP 2025 findings",
-    "conference": null,
+    "conference": "EMNLP 2025",
     "tags": [
       "Natural Language Processing",
       "Machine Learning"
@@ -17203,7 +17203,7 @@
     "source": "ArXiv",
     "venue": "cs.CL",
     "comment": "Accepted at Joint Sixth Workshop on Computational Approaches to\n  Discourse, Context and Document-Level Inferences (CODI 2025) and Eighth\n  Workshop on Computational Models of Reference, Anaphora and Coreference (CRAC\n  2025)",
-    "conference": "Joint Sixth Workshop on Computational Approaches to Discourse",
+    "conference": null,
     "tags": [
       "Natural Language Processing"
     ]
@@ -17427,7 +17427,7 @@
     "source": "ArXiv",
     "venue": "cs.CL",
     "comment": "This work has been submitted to the IEEE for possible publication",
-    "conference": null,
+    "conference": "This work has been submitted to the IEEE for possi",
     "tags": [
       "Natural Language Processing"
     ]
@@ -17615,7 +17615,7 @@
     "source": "ArXiv",
     "venue": "cs.CL",
     "comment": "Accepted in NeurIPS 2025",
-    "conference": null,
+    "conference": "NeurIPS 2025",
     "tags": [
       "Natural Language Processing",
       "Robotics"
@@ -17807,7 +17807,7 @@
     "source": "ArXiv",
     "venue": "cs.CL",
     "comment": "Published in Proceedings of the 38th Canadian Conference on\n  Artificial Intelligence CanAI 2025 Calgary Alberta May 26-27 2025. 5 figures\n  7 tables",
-    "conference": "Proceedings of the 38th Canadian Conference on Artificial Intelligence CanAI 2025 Calgary Alberta May 26-27 2025",
+    "conference": null,
     "tags": [
       "Natural Language Processing"
     ]
@@ -17904,7 +17904,7 @@
     "source": "ArXiv",
     "venue": "cs.CL",
     "comment": "Accepted to NeurIPS 2025 Datasets & Benchmarks track",
-    "conference": "NeurIPS 2025 Datasets & Benchmarks track",
+    "conference": "NeurIPS 2025",
     "tags": []
   },
   {
@@ -18060,7 +18060,7 @@
     "source": "ArXiv",
     "venue": "cs.LG",
     "comment": "NeurIPS 2025",
-    "conference": null,
+    "conference": "NeurIPS 2025",
     "tags": []
   },
   {
@@ -18195,7 +18195,7 @@
     "source": "ArXiv",
     "venue": "cs.LG",
     "comment": "NeurIPS 2025 Workshop on Recent Advances in Time Series Foundation\n  Models (BERT2S)",
-    "conference": null,
+    "conference": "NeurIPS 2025",
     "tags": []
   },
   {
@@ -18821,7 +18821,7 @@
     "source": "ArXiv",
     "venue": "cs.LG",
     "comment": "25 pages, 13 figures, VLDB Journal",
-    "conference": null,
+    "conference": "VLDB",
     "tags": []
   },
   {
@@ -18953,7 +18953,7 @@
     "source": "ArXiv",
     "venue": "cs.LG",
     "comment": "Accepted to the NeurIPS 2025 Workshop on Machine Learning and the\n  Physical Sciences",
-    "conference": "NeurIPS 2025 Workshop on Machine Learning and the Physical Sciences",
+    "conference": "NeurIPS 2025",
     "tags": [
       "Machine Learning"
     ]
@@ -18981,7 +18981,7 @@
     "source": "ArXiv",
     "venue": "cs.LG",
     "comment": "Five pages, four figures, to be presented at the AI in Science\n  Summit, Denmark, November, 2025",
-    "conference": null,
+    "conference": "Five pages, four figures, to be presented at the A",
     "tags": []
   },
   {
@@ -19138,7 +19138,7 @@
     "source": "ArXiv",
     "venue": "cs.LG",
     "comment": "NeurIPS 2025 (Spotlight)",
-    "conference": null,
+    "conference": "NeurIPS 2025",
     "tags": [
       "Natural Language Processing"
     ]
@@ -19815,7 +19815,7 @@
     "source": "ArXiv",
     "venue": "cs.LG",
     "comment": "7 pages, 3 figures, accepted to IPIN 2025",
-    "conference": "IPIN 2025",
+    "conference": null,
     "tags": []
   },
   {
@@ -20024,7 +20024,7 @@
     "source": "ArXiv",
     "venue": "cs.LG",
     "comment": "NeurIPS 2025",
-    "conference": null,
+    "conference": "NeurIPS 2025",
     "tags": []
   },
   {
@@ -20071,7 +20071,7 @@
     "source": "ArXiv",
     "venue": "cs.LG",
     "comment": "Accepted in NeurIPS 2025",
-    "conference": null,
+    "conference": "NeurIPS 2025",
     "tags": [
       "Machine Learning",
       "Multimodal"
@@ -20099,7 +20099,7 @@
     "source": "ArXiv",
     "venue": "cs.LG",
     "comment": "37 pages, 4 figures, 86 references. Submitted to Journal of Computer\n  Security (under review)",
-    "conference": null,
+    "conference": "37 pages, 4 figures, 86 references. Submitted to J",
     "tags": [
       "Machine Learning"
     ]
@@ -20327,7 +20327,7 @@
     "source": "ArXiv",
     "venue": "cs.LG",
     "comment": "This work has been submitted to the IEEE for possible publication",
-    "conference": null,
+    "conference": "This work has been submitted to the IEEE for possi",
     "tags": [
       "Natural Language Processing"
     ]
@@ -20380,7 +20380,7 @@
     "source": "ArXiv",
     "venue": "cs.LG",
     "comment": "NeurIPS 2025 (Spotlight)",
-    "conference": null,
+    "conference": "NeurIPS 2025",
     "tags": [
       "Natural Language Processing",
       "Robotics"
@@ -20548,7 +20548,7 @@
     "source": "ArXiv",
     "venue": "cs.LG",
     "comment": "This paper is currently under review for presentation at the IEEE\n  SAMI 2026 Conference",
-    "conference": null,
+    "conference": "This paper is currently under review for presentat",
     "tags": []
   },
   {
@@ -20572,7 +20572,7 @@
     "source": "ArXiv",
     "venue": "cs.LG",
     "comment": "EMNLP 2025 (main)",
-    "conference": null,
+    "conference": "EMNLP 2025",
     "tags": [
       "Machine Learning"
     ]
@@ -20675,7 +20675,7 @@
     "source": "ArXiv",
     "venue": "cs.IR",
     "comment": "Accepted at 32nd International Conference on MultiMedia Modeling",
-    "conference": "32nd International Conference on MultiMedia Modeling",
+    "conference": null,
     "tags": [
       "Multimodal"
     ]
@@ -20960,7 +20960,7 @@
     "source": "ArXiv",
     "venue": "cs.IR",
     "comment": "Accepted to NeurIPS 2025 Datasets & Benchmarks track",
-    "conference": "NeurIPS 2025 Datasets & Benchmarks track",
+    "conference": "NeurIPS 2025",
     "tags": []
   },
   {
@@ -21123,7 +21123,7 @@
     "source": "ArXiv",
     "venue": "cs.RO",
     "comment": "8 pages, 6 figures. Submitted to IEEE-RAS International Conference on\n  Soft Robotics 2026",
-    "conference": null,
+    "conference": "8 pages, 6 figures. Submitted to IEEE-RAS Internat",
     "tags": []
   },
   {
@@ -21370,7 +21370,7 @@
     "source": "ArXiv",
     "venue": "cs.RO",
     "comment": "7 pages, 3 figures, accepted to IPIN 2025",
-    "conference": "IPIN 2025",
+    "conference": null,
     "tags": []
   },
   {
@@ -21606,7 +21606,7 @@
     "source": "ArXiv",
     "venue": "cs.RO",
     "comment": "8 pages, 7 figures, accepted to ICAR 2025",
-    "conference": "ICAR 2025",
+    "conference": null,
     "tags": [
       "Robotics",
       "Machine Learning"
@@ -22108,7 +22108,7 @@
     "source": "ArXiv",
     "venue": "cs.RO",
     "comment": "This work has been submitted to the IEEE for possible publication",
-    "conference": null,
+    "conference": "This work has been submitted to the IEEE for possi",
     "tags": [
       "Machine Learning"
     ]
@@ -22217,7 +22217,7 @@
     "source": "ArXiv",
     "venue": "cs.CV",
     "comment": "Submitted to Hydrology and Earth System Sciences",
-    "conference": null,
+    "conference": "Submitted to Hydrology and Earth System Sciences",
     "tags": [
       "Machine Learning"
     ]
@@ -22385,7 +22385,7 @@
     "source": "ArXiv",
     "venue": "cs.CV",
     "comment": "Camera-ready version for NeurIPS 2025, 10 pages (main paper)",
-    "conference": null,
+    "conference": "NeurIPS 2025",
     "tags": [
       "Computer Vision",
       "Robotics"
@@ -22800,7 +22800,7 @@
     "source": "ArXiv",
     "venue": "cs.CV",
     "comment": "NeurIPS 2025",
-    "conference": null,
+    "conference": "NeurIPS 2025",
     "tags": [
       "Natural Language Processing"
     ]
@@ -22891,7 +22891,7 @@
     "source": "ArXiv",
     "venue": "cs.CV",
     "comment": "Accepted by IEEE Transactions on Image Processing (TIP), 2025",
-    "conference": "IEEE Transactions on Image Processing (TIP)",
+    "conference": "Accepted by IEEE Transactions on Image Processing ",
     "tags": []
   },
   {
@@ -22948,7 +22948,7 @@
     "source": "ArXiv",
     "venue": "cs.CV",
     "comment": "Code available at: https://github.com/HKUST-MINSys-Lab/MMEdge.\n  Accepted by SenSys 2026",
-    "conference": "SenSys 2026",
+    "conference": null,
     "tags": [
       "Robotics",
       "Machine Learning",
@@ -23294,7 +23294,7 @@
     "source": "ArXiv",
     "venue": "cs.CL",
     "comment": "Accepted for publication in the Proceedings of the 24th IEEE\n  International Conference on Trust, Security and Privacy in Computing and\n  Communications (TrustCom 2025) Privacy track, 11 pages, 8 figures",
-    "conference": "publication in the Proceedings of the 24th IEEE International Conference on Trust",
+    "conference": "Accepted for publication in the Proceedings of the",
     "tags": [
       "Natural Language Processing"
     ]
@@ -23695,7 +23695,7 @@
     "source": "ArXiv",
     "venue": "cs.CL",
     "comment": "ACL 2025",
-    "conference": null,
+    "conference": "ACL 2025",
     "tags": [
       "Natural Language Processing"
     ]
@@ -23910,7 +23910,7 @@
     "source": "ArXiv",
     "venue": "cs.CL",
     "comment": "Accepted to EMNLP - NLLP Workshop",
-    "conference": "EMNLP - NLLP Workshop",
+    "conference": "EMNLP",
     "tags": [
       "Natural Language Processing"
     ]
@@ -23969,7 +23969,7 @@
     "source": "ArXiv",
     "venue": "cs.CL",
     "comment": "Workshop on Multi-Agent System @ ICML 2025",
-    "conference": null,
+    "conference": "ICML 2025",
     "tags": [
       "Natural Language Processing"
     ]
@@ -24198,7 +24198,7 @@
     "source": "ArXiv",
     "venue": "cs.CL",
     "comment": "Presented at the Annual Meeting of the American Political Science\n  Association, Vancouver, BC, September 11--14 2025",
-    "conference": null,
+    "conference": "Presented at the Annual Meeting of the American Po",
     "tags": [
       "Natural Language Processing"
     ]
@@ -24224,7 +24224,7 @@
     "source": "ArXiv",
     "venue": "cs.CL",
     "comment": "Accepted to EMNLP 2025 Findings. RLMEval benchmark released:\n  https://github.com/augustepoiroux/RLMEval",
-    "conference": "EMNLP 2025 Findings",
+    "conference": "EMNLP 2025",
     "tags": [
       "Natural Language Processing"
     ]
@@ -24278,7 +24278,7 @@
     "source": "ArXiv",
     "venue": "cs.IR",
     "comment": "Accepted for presentation at the AI in Science Summit 2025",
-    "conference": "presentation at the AI in Science Summit 2025",
+    "conference": "Accepted for presentation at the AI in Science Sum",
     "tags": []
   },
   {
@@ -24515,7 +24515,7 @@
     "source": "ArXiv",
     "venue": "cs.IR",
     "comment": "The 39th Conference on Neural Information Processing Systems (NeurIPS\n  2025)",
-    "conference": null,
+    "conference": "NeurIPS 2025",
     "tags": []
   },
   {
@@ -24545,7 +24545,7 @@
     "source": "ArXiv",
     "venue": "cs.IR",
     "comment": "Accepted by CIKM 2025",
-    "conference": "CIKM 2025",
+    "conference": null,
     "tags": [
       "Machine Learning"
     ]
@@ -24658,7 +24658,7 @@
     "source": "ArXiv",
     "venue": "cs.RO",
     "comment": "8 pages, 9 figures, submitted for review to IEEE RA-L",
-    "conference": null,
+    "conference": "8 pages, 9 figures, submitted for review to IEEE R",
     "tags": []
   },
   {
@@ -24739,7 +24739,7 @@
     "source": "ArXiv",
     "venue": "cs.RO",
     "comment": "This work has been submitted to the IEEE for possible publication",
-    "conference": null,
+    "conference": "This work has been submitted to the IEEE for possi",
     "tags": [
       "Machine Learning"
     ]
@@ -24871,7 +24871,7 @@
     "source": "ArXiv",
     "venue": "cs.RO",
     "comment": "Published in RA-L 2025",
-    "conference": "RA-L 2025",
+    "conference": null,
     "tags": [
       "Computer Vision"
     ]
@@ -25083,7 +25083,7 @@
     "source": "ArXiv",
     "venue": "cs.RO",
     "comment": "8 pages, 7 figures, 1 table. Submitted to ICRA 2026",
-    "conference": null,
+    "conference": "ICRA 2026",
     "tags": [
       "Natural Language Processing",
       "Multimodal",
@@ -25145,7 +25145,7 @@
     "source": "ArXiv",
     "venue": "cs.RO",
     "comment": "\\c{opyright} 2025 Alexander Rambech, Ivar Saksvik and Vahid Hassani.\n  Accepted by IFAC for publication under a Creative Commons License CC-BY-NC-ND",
-    "conference": "IFAC for publication under a Creative Commons License CC-BY-NC-ND",
+    "conference": null,
     "tags": []
   },
   {
@@ -25252,7 +25252,7 @@
     "source": "ArXiv",
     "venue": "cs.RO",
     "comment": "Accepted to 2025 IEEE International Automated Vehicle Validation\n  Conference (IAVVC)",
-    "conference": "2025 IEEE International Automated Vehicle Validation Conference (IAVVC)",
+    "conference": "Accepted to 2025 IEEE International Automated Vehi",
     "tags": [
       "Robotics"
     ]
@@ -25673,7 +25673,7 @@
     "source": "ArXiv",
     "venue": "cs.RO",
     "comment": "The International Journal of Advanced Manufacturing Technology, 2024",
-    "conference": null,
+    "conference": "The International Journal of Advanced Manufacturin",
     "tags": []
   },
   {
@@ -25776,7 +25776,7 @@
     "source": "ArXiv",
     "venue": "cs.IR",
     "comment": "To appear in IEEE BigData 2025",
-    "conference": "IEEE BigData 2025",
+    "conference": "To appear in IEEE BigData 2025",
     "tags": [
       "Natural Language Processing"
     ]
@@ -26122,7 +26122,7 @@
     "source": "ArXiv",
     "venue": "cs.RO",
     "comment": "This Paper Has Accepted at ASME 2025 International Mechanical\n  Engineering Congress and Exposition (IMECE 2025)",
-    "conference": "ASME 2025 International Mechanical Engineering Congress and Exposition (IMECE 2025)",
+    "conference": null,
     "tags": [
       "Robotics"
     ]
@@ -26416,7 +26416,7 @@
     "source": "ArXiv",
     "venue": "cs.RO",
     "comment": "Submitted for ICRA 2026",
-    "conference": null,
+    "conference": "ICRA 2026",
     "tags": []
   },
   {
@@ -26468,7 +26468,7 @@
     "source": "ArXiv",
     "venue": "cs.RO",
     "comment": "Submitted to IEEE Robotics and Automation Letters",
-    "conference": null,
+    "conference": "Submitted to IEEE Robotics and Automation Letters",
     "tags": [
       "Robotics"
     ]
@@ -26633,7 +26633,7 @@
     "source": "ArXiv",
     "venue": "cs.RO",
     "comment": "This work has been submitted to the IEEE for possible publication",
-    "conference": null,
+    "conference": "This work has been submitted to the IEEE for possi",
     "tags": [
       "Machine Learning"
     ]
@@ -26660,7 +26660,7 @@
     "source": "ArXiv",
     "venue": "cs.RO",
     "comment": "This work has been submitted to the IEEE for possible publication",
-    "conference": null,
+    "conference": "This work has been submitted to the IEEE for possi",
     "tags": [
       "Machine Learning"
     ]
@@ -26994,7 +26994,7 @@
     "source": "ArXiv",
     "venue": "cs.RO",
     "comment": "Neurips 2025",
-    "conference": null,
+    "conference": "NeurIPS 2025",
     "tags": []
   },
   {
@@ -27048,7 +27048,7 @@
     "source": "ArXiv",
     "venue": "cs.IR",
     "comment": "EMNLP 2025 Main (Short)",
-    "conference": null,
+    "conference": "EMNLP 2025",
     "tags": []
   },
   {
@@ -27141,7 +27141,7 @@
     "source": "ArXiv",
     "venue": "cs.IR",
     "comment": "NeurIPS 2025 poster",
-    "conference": null,
+    "conference": "NeurIPS 2025",
     "tags": [
       "Robotics",
       "Machine Learning"
@@ -27263,7 +27263,7 @@
     "source": "ArXiv",
     "venue": "cs.IR",
     "comment": "14 pages, 8 figures, 4 tables, submitted to ICDE 2026",
-    "conference": null,
+    "conference": "ICDE 2026",
     "tags": [
       "Machine Learning"
     ]
@@ -27344,7 +27344,7 @@
     "source": "ArXiv",
     "venue": "cs.IR",
     "comment": "Presented at NORMalize 2025: The Third Workshop on the Normative\n  Design and Evaluation of Recommender Systems, co-located with the ACM\n  Conference on Recommender Systems 2025 (RecSys 2025), Prague",
-    "conference": null,
+    "conference": "RecSys 2025",
     "tags": []
   },
   {
@@ -27438,7 +27438,7 @@
     "source": "ArXiv",
     "venue": "cs.IR",
     "comment": "9 pages, NeurIPS 2025 Workshop on Language Agents and World Models",
-    "conference": null,
+    "conference": "NeurIPS 2025",
     "tags": [
       "Machine Learning"
     ]
@@ -27467,7 +27467,7 @@
     "source": "ArXiv",
     "venue": "cs.IR",
     "comment": "Accepted at NeurIPS 2025 UniReps Workshop",
-    "conference": "NeurIPS 2025 UniReps Workshop",
+    "conference": "NeurIPS 2025",
     "tags": [
       "Natural Language Processing",
       "Multimodal"
@@ -27494,7 +27494,7 @@
     "source": "ArXiv",
     "venue": "cs.IR",
     "comment": "Preprint, accepted at WSDM 2026 (Full Paper). 16 pages, 8 figures",
-    "conference": "WSDM 2026 (Full Paper)",
+    "conference": null,
     "tags": []
   },
   {
