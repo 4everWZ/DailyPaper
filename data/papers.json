@@ -1,5 +1,66 @@
 [
   {
+    "id": "2510.27316v2",
+    "title": "Parameterized Prompt for Incremental Object Detection",
+    "authors": [
+      "Zijia An",
+      "Boyu Diao",
+      "Ruiqi Liu",
+      "Libo Huang",
+      "Chuanguang Yang",
+      "Fei Wang",
+      "Zhulin An",
+      "Yongjun Xu"
+    ],
+    "abstract": "Recent studies have demonstrated that incorporating trainable prompts into\npretrained models enables effective incremental learning. However, the\napplication of prompts in incremental object detection (IOD) remains\nunderexplored. Existing prompts pool based approaches assume disjoint class\nsets across incremental tasks, which are unsuitable for IOD as they overlook\nthe inherent co-occurrence phenomenon in detection images. In co-occurring\nscenarios, unlabeled objects from previous tasks may appear in current task\nimages, leading to confusion in prompts pool. In this paper, we hold that\nprompt structures should exhibit adaptive consolidation properties across\ntasks, with constrained updates to prevent catastrophic forgetting. Motivated\nby this, we introduce Parameterized Prompts for Incremental Object Detection\n(P$^2$IOD). Leveraging neural networks global evolution properties, P$^2$IOD\nemploys networks as the parameterized prompts to adaptively consolidate\nknowledge across tasks. To constrain prompts structure updates, P$^2$IOD\nfurther engages a parameterized prompts fusion strategy. Extensive experiments\non PASCAL VOC2007 and MS COCO datasets demonstrate that P$^2$IOD's\neffectiveness in IOD and achieves the state-of-the-art performance among\nexisting baselines.",
+    "published": "2025-10-31",
+    "updated": "2025-11-04",
+    "categories": [
+      "cs.CV"
+    ],
+    "primary_category": "cs.CV",
+    "pdf_url": "http://arxiv.org/pdf/2510.27316v2",
+    "arxiv_url": "http://arxiv.org/abs/2510.27316v2",
+    "source": "ArXiv",
+    "venue": "cs.CV",
+    "comment": null,
+    "conference": null,
+    "tags": [
+      "Computer Vision",
+      "Machine Learning"
+    ]
+  },
+  {
+    "id": "2510.27181v3",
+    "title": "Dual-level Progressive Hardness-Aware Reweighting for Cross-View Geo-Localization",
+    "authors": [
+      "Guozheng Zheng",
+      "Jian Guan",
+      "Mingjie Xie",
+      "Xuanjia Zhao",
+      "Congyi Fan",
+      "Shiheng Zhang",
+      "Pengming Feng"
+    ],
+    "abstract": "Cross-view geo-localization (CVGL) between drone and satellite imagery\nremains challenging due to severe viewpoint gaps and the presence of hard\nnegatives, which are visually similar but geographically mismatched samples.\nExisting mining or reweighting strategies often use static weighting, which is\nsensitive to distribution shifts and prone to overemphasizing difficult samples\ntoo early, leading to noisy gradients and unstable convergence. In this paper,\nwe present a Dual-level Progressive Hardness-aware Reweighting (DPHR) strategy.\nAt the sample level, a Ratio-based Difficulty-Aware (RDA) module evaluates\nrelative difficulty and assigns fine-grained weights to negatives. At the batch\nlevel, a Progressive Adaptive Loss Weighting (PALW) mechanism exploits a\ntraining-progress signal to attenuate noisy gradients during early optimization\nand progressively enhance hard-negative mining as training matures. Experiments\non the University-1652 and SUES-200 benchmarks demonstrate the effectiveness\nand robustness of the proposed DPHR, achieving consistent improvements over\nstate-of-the-art methods.",
+    "published": "2025-10-31",
+    "updated": "2025-11-04",
+    "categories": [
+      "cs.CV",
+      "cs.AI"
+    ],
+    "primary_category": "cs.CV",
+    "pdf_url": "http://arxiv.org/pdf/2510.27181v3",
+    "arxiv_url": "http://arxiv.org/abs/2510.27181v3",
+    "source": "ArXiv",
+    "venue": "cs.CV",
+    "comment": "5 pages, 3 figures",
+    "conference": null,
+    "tags": [
+      "Machine Learning"
+    ]
+  },
+  {
     "id": "2510.27630v2",
     "title": "Interaction as Intelligence Part II: Asynchronous Human-Agent Rollout for Long-Horizon Task Training",
     "authors": [
