@@ -1,0 +1,446 @@
+/* 全局样式 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f5f5f5;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* 头部样式 */
+header {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 2rem 0;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.subtitle {
+    font-size: 1.1rem;
+    opacity: 0.9;
+}
+
+.update-time {
+    font-size: 0.9rem;
+    opacity: 0.8;
+    margin-top: 0.5rem;
+}
+
+/* 导航和筛选 */
+nav {
+    background: white;
+    padding: 1.5rem 20px;
+    margin: 2rem auto;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.filter-section {
+    margin-bottom: 1rem;
+}
+
+.filter-group {
+    margin-bottom: 1rem;
+}
+
+.filter-label {
+    display: inline-block;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 0.5rem;
+    font-size: 0.95rem;
+}
+
+.filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.filter-btn {
+    padding: 0.5rem 1rem;
+    border: 2px solid #667eea;
+    background: white;
+    color: #667eea;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3s;
+    font-size: 0.9rem;
+}
+
+.filter-btn:hover {
+    background: #f0f0f0;
+}
+
+.filter-btn.active {
+    background: #667eea;
+    color: white;
+}
+
+.search-box {
+    margin-top: 1.5rem;
+}
+
+.search-box input {
+    width: 100%;
+    padding: 0.8rem;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: border-color 0.3s;
+}
+
+.search-box input:focus {
+    outline: none;
+    border-color: #667eea;
+}
+
+/* 主内容区域 */
+main {
+    margin-top: 0;
+}
+
+#papers-container {
+    margin-top: 1rem;
+}
+
+/* 结果信息栏 */
+.results-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+    padding: 0.8rem;
+    background: #f8f9fa;
+    border-radius: 8px;
+}
+
+#resultsCount {
+    font-size: 0.9rem;
+    color: #666;
+    font-weight: 500;
+}
+
+.export-btn {
+    padding: 0.5rem 1rem;
+    background: #667eea;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: background 0.3s;
+}
+
+.export-btn:hover {
+    background: #5568d3;
+}
+
+/* 论文卡片 */
+.paper-card {
+    position: relative;
+    background: white;
+    padding: 1.5rem;
+    padding-top: 2.5rem;
+    padding-left: 4rem;
+    margin-bottom: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    transition: transform 0.3s, box-shadow 0.3s;
+    display: flex;
+    align-items: flex-start;
+}
+
+.paper-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+
+/* 复选框样式 */
+.paper-select {
+    position: absolute;
+    left: 1.2rem;
+    top: 1.5rem;
+}
+
+.paper-checkbox {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    accent-color: #667eea;
+}
+
+.paper-content {
+    flex: 1;
+}
+
+/* 导出控制按钮 */
+.export-controls {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+.select-btn {
+    padding: 0.5rem 1rem;
+    background: white;
+    border: 2px solid #667eea;
+    color: #667eea;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    font-weight: 600;
+    transition: all 0.3s;
+}
+
+.select-btn:hover {
+    background: #667eea;
+    color: white;
+}
+
+/* Venue 徽章 - 增强对比度和可见性 */
+.venue-badge {
+    display: inline-block;
+    padding: 0.4rem 0.9rem;
+    border-radius: 6px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-transform: none;
+    letter-spacing: 0.3px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+    margin-left: 0.5rem;
+    max-width: 600px;
+    white-space: normal;
+    word-wrap: break-word;
+    line-height: 1.4;
+}
+
+.badge-neurips {
+    background: #6B46C1;
+    color: white;
+}
+
+.badge-cvpr, .badge-iccv, .badge-eccv {
+    background: #E53E3E;
+    color: white;
+}
+
+.badge-icml, .badge-iclr {
+    background: #3182CE;
+    color: white;
+}
+
+.badge-acl, .badge-emnlp, .badge-naacl {
+    background: #38A169;
+    color: white;
+}
+
+.badge-aaai, .badge-ijcai {
+    background: #D69E2E;
+    color: white;
+}
+
+.badge-published {
+    background: #4A5568;
+    color: white;
+}
+
+.preprint {
+    background: #f5f5f5;
+    color: #757575;
+}
+
+.paper-title {
+    font-size: 1.3rem;
+    margin-bottom: 0.8rem;
+}
+
+.paper-title a {
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.paper-title a:hover {
+    color: #667eea;
+}
+
+.paper-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 0.8rem;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.meta-item.venue-conference {
+    color: #2e7d32;
+    font-weight: 600;
+    background: #e8f5e9;
+    padding: 0.2rem 0.6rem;
+    border-radius: 4px;
+}
+
+.meta-item.venue-preprint {
+    color: #666;
+}
+
+.paper-authors {
+    margin-bottom: 0.8rem;
+    color: #555;
+    font-size: 0.95rem;
+}
+
+.paper-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.tag {
+    display: inline-block;
+    padding: 0.3rem 0.8rem;
+    background: #e3f2fd;
+    color: #1976d2;
+    border-radius: 15px;
+    font-size: 0.85rem;
+}
+
+.paper-abstract {
+    margin-bottom: 1rem;
+}
+
+.paper-abstract details summary {
+    cursor: pointer;
+    color: #667eea;
+    font-weight: 500;
+    user-select: none;
+}
+
+.paper-abstract details[open] summary {
+    margin-bottom: 0.5rem;
+}
+
+.paper-abstract p {
+    color: #555;
+    line-height: 1.8;
+    text-align: justify;
+}
+
+.paper-links {
+    display: flex;
+    gap: 1rem;
+}
+
+.btn-link {
+    padding: 0.5rem 1rem;
+    background: #667eea;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    transition: background 0.3s;
+    display: inline-block;
+}
+
+.btn-link:hover {
+    background: #5568d3;
+}
+
+.btn-code {
+    background: #28a745;
+}
+
+.btn-code:hover {
+    background: #218838;
+}
+
+.btn-project {
+    background: #17a2b8;
+}
+
+.btn-project:hover {
+    background: #138496;
+}
+
+/* 底部 */
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 2rem 0;
+    margin-top: 3rem;
+}
+
+footer a {
+    color: #667eea;
+    text-decoration: none;
+}
+
+/* 无结果提示 */
+.no-results {
+    text-align: center;
+    padding: 3rem;
+    color: #999;
+    font-size: 1.1rem;
+}
+
+/* 加载指示器 */
+.loading-indicator {
+    text-align: center;
+    padding: 2rem;
+    color: #667eea;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.loading-indicator::after {
+    content: '';
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-left: 10px;
+    border: 3px solid #667eea;
+    border-radius: 50%;
+    border-top-color: transparent;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+    
+    .filters {
+        justify-content: center;
+    }
+    
+    .paper-meta {
+        flex-direction: column;
+        gap: 0.3rem;
+    }
+}
