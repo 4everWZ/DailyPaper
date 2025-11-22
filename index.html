@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DailyPaper - AI/ML/CV/NLP 最新论文</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>📚 DailyPaper</h1>
+            <p class="subtitle">每日自动更新 AI/ML/CV/NLP 领域最新论文</p>
+            <p class="update-time">最后更新: 2025-11-22 01:37:00 UTC</p>
+        </div>
+    </header>
+    
+    <nav class="container">
+        <div class="filter-section">
+            <div class="filter-group">
+                <label class="filter-label">📅 月份：</label>
+                <div class="filters month-filters">
+                    <button class="filter-btn month-btn active" data-month="all">全部 (5208)</button>
+                    <button class="filter-btn month-btn" data-month="2025-11">2025-11 (4234)</button>
+                    <button class="filter-btn month-btn" data-month="2025-10">2025-10 (974)</button>
+                </div>
+            </div>
+            <div class="filter-group">
+                <label class="filter-label">📌 发表状态：</label>
+                <div class="filters status-filters">
+                    <button class="filter-btn status-btn active" data-status="all">全部 (5208)</button>
+                    <button class="filter-btn status-btn" data-status="published">已发表 (1089)</button>
+                    <button class="filter-btn status-btn" data-status="preprint">预印本 (4119)</button>
+                </div>
+            </div>
+            <div class="filter-group">
+                <label class="filter-label">🏷️ 研究领域：</label>
+                <div class="filters category-filters">
+                    <button class="filter-btn category-btn active" data-category="all">全部 (5208)</button>
+                    <button class="filter-btn category-btn" data-category="Computer Vision">Computer Vision (335)</button>
+                    <button class="filter-btn category-btn" data-category="Natural Language Processing">NLP (2083)</button>
+                    <button class="filter-btn category-btn" data-category="Machine Learning">Machine Learning (1843)</button>
+                    <button class="filter-btn category-btn" data-category="Robotics">Robotics (1318)</button>
+                    <button class="filter-btn category-btn" data-category="Multimodal">Multimodal (831)</button>
+                </div>
+            </div>
+            <div class="filter-group">
+                <label class="filter-label">🔄 排序方式：</label>
+                <div class="filters sort-filters">
+                    <button class="filter-btn sort-btn active" data-sort="date-desc">最新优先</button>
+                    <button class="filter-btn sort-btn" data-sort="date-asc">最早优先</button>
+                </div>
+            </div>
+        </div>
+        <div class="search-box">
+            <input type="text" id="searchInput" placeholder="🔍 搜索论文标题、作者、摘要...">
+        </div>
+        <div class="results-info">
+            <span id="resultsCount">加载中...</span>
+            <div class="export-controls">
+                <button class="select-btn" id="selectAllBtn">✓ 全选</button>
+                <button class="select-btn" id="clearAllBtn">✗ 清空</button>
+                <button class="export-btn" id="exportBtn">📥 导出选中 (<span id="selectedCount">0</span>)</button>
+            </div>
+        </div>
+    </nav>
+    
+    <main class="container">
+        <div id="papers-container">
+            <!-- Papers will be loaded by JavaScript -->
+        </div>
+    </main>
+    
+    <footer>
+        <div class="container">
+            <p>© 2025 DailyPaper | 数据来源: ArXiv | <a href="https://github.com/yourusername/DailyPaper" target="_blank">GitHub</a></p>
+        </div>
+    </footer>
+    
+    <script src="js/main.js"></script>
+</body>
+</html>
