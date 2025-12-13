@@ -1,0 +1,20 @@
+[
+  {
+    "month": "2025-12",
+    "count": 3590,
+    "published_count": 513,
+    "preprint_count": 3077
+  },
+  {
+    "month": "2025-11",
+    "count": 6477,
+    "published_count": 1346,
+    "preprint_count": 5131
+  },
+  {
+    "month": "2025-10",
+    "count": 974,
+    "published_count": 143,
+    "preprint_count": 831
+  }
+]
