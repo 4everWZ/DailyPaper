@@ -2,16 +2,16 @@ name: Update Papers Daily
 
 on:
   # 每天 UTC 0:00 自动运行
-  schedule:
-    - cron: '0 0 * * *'
+  # schedule:
+    # - cron: '0 0 * * *'
   
   # 支持手动触发
   workflow_dispatch:
   
   # Push 到 main 分支时触发
-  push:
-    branches:
-      - main
+  # push:
+    # branches:
+      # - main
 
 jobs:
   update-papers:
